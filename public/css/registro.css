@@ -1,0 +1,139 @@
+.container-fluid{
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  align-content: center;
+}
+
+main{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.cajaPrincipal{
+  width: 100%;
+  background-color: white;
+}
+
+.formulario{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.datos{
+    text-align: center;
+    width: 100%;
+}
+
+.campos{
+  border: solid 1px lightgrey;
+  background-color: #F4F4F4;
+  border-radius: 4%;
+  height: 34px;
+  padding-left: 5px;
+  font-size: 13px;
+  width: 170px;
+}
+
+.parrafoAvatar{
+  margin-bottom: 0rem;
+}
+
+.avatar{
+  font-size: 12px;
+  width: 49%;
+}
+
+p{
+  font-size: 15px;
+}
+
+#nacimiento{
+  margin-bottom: 5px;
+}
+
+.terminos{
+  margin-top: 15px;
+  justify-content: space-evenly;
+  display: inline-flex;
+  align-items: center;
+  width: 93%;
+}
+
+#terminos{
+  margin-left: 10px;
+}
+
+div .declaro{
+  font-size: 10px;
+  text-align: center;
+  width: 77%;
+  margin-bottom: 0;
+}
+
+.crearcuenta{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .terminos{
+    justify-content: center;
+    width: 100%;
+  }
+
+  div .declaro{
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px){
+  .container {
+    margin-top: 80px;
+  }
+
+  .head {
+    top: 0;
+  }
+
+  h1{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  main div .datos{
+    width: 40%;
+    margin-top: 2px;
+    margin-bottom: 20px;
+  }
+
+  main div .textoContacto{
+      font-weight: bold;
+  }
+
+  #nacimiento{
+    text-align: center;
+  }
+
+  div .declaro{
+    width: 32%;
+  }
+
+  main div .crearcuenta{
+    float: left;
+  }
+}

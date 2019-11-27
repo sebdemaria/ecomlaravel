@@ -1,0 +1,97 @@
+.container-fluid{
+  width: 100%;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main{
+  width: 90%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1{
+  width: 100%;
+  margin: 35px 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+p{
+  background-image: none;
+  padding-left: 10px;
+}
+
+.card{
+  width: 100%;
+  margin: 6px 0;
+}
+
+.card-header{
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  background-color: #FAD7A0;
+}
+
+.card-body{
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 3px;
+  padding-top: 0
+}
+
+ol {
+  font-size: 16px;
+  text-align: center;
+}
+
+ol li{
+  list-style-type: decimal!important;
+  font-size: 14px;
+  text-align: center;
+  margin: 15px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  margin: 15px;
+}
+
+.util{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 70%;
+  text-align: center;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 4%;
+}
+
+.contacto{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 97%;
+  text-align: center;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 4%;
+  margin-bottom: 15px;
+}
+
+section a button{
+  background-image: none;
+  cursor: pointer;
+}
+
+h3{
+  font-size: 15px;
+  text-align: justify center;
+}
+
+@media (min-width: 768px){
+
+  .util{
+    width: 97%;
+  }
+
+}

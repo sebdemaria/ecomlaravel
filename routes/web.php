@@ -2,7 +2,7 @@
 
 //Home
 Route::get('/home', function () {
-    return ("Este es el home");
+    return view("home");
 });
 
 //Registro
