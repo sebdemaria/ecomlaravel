@@ -1,15 +1,15 @@
+@extends('main')
 <html lang="en" dir="ltr">
     <head>
 
         <!--//require_once('headerConfigs.php');-->
-
+        @include('headerConfigs')
       <title>Home</title>
-      <link rel="stylesheet" href="/css/main.css">
       <link rel="stylesheet" href="/css/home.css">
     </head>
 
     <body>
-
+      @section('body')
         <div class="container-fluid">
             <main>
 
@@ -131,5 +131,6 @@
 
 
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      @endsection
     </body>
 </html>

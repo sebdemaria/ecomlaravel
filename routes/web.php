@@ -5,6 +5,11 @@ Route::get('/home', function () {
     return view("home");
 });
 
+//Home
+Route::get('/plantillaprueba', function () {
+    return view("plantillaprueba");
+});
+
 //Registro
 Route::get('/registro', function () {
     return ("Este es el registro");
