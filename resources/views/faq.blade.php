@@ -135,7 +135,7 @@
                    <br>
                    ¡Contactanos por mail y te ayudaremos personalmente!
                  </h3>
-                 <a href="contacto.php" class="btn btn-primary">Contacto</a>
+                 <a href="contacto" class="btn btn-primary">Contacto</a>
               </section>
 
 

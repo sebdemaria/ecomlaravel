@@ -54,7 +54,7 @@
 
               </p>
 
-              <a href="checkout.php">
+              <a href="checkout">
               <button id="button-confirmar" type="button" class="btn btn-outline-primary">Confirmar compra</button>
               </a>
 

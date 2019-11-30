@@ -16,8 +16,8 @@
     <!--HEADER-->
     <header class="head">
       <div class="divlogo">
-        <a href="home.php"> <img class="logo" id="logoLargo" src="img/Biser logo transparent 2.png" alt="logo"> </a>
-        <a href="home.php"> <img class="logo" id="logoCorto" src="img/Biser logo B transparent 2.png" alt="logo"> </a>
+        <a href="home"> <img class="logo" id="logoLargo" src="img/Biser logo transparent 2.png" alt="logo"> </a>
+        <a href="home"> <img class="logo" id="logoCorto" src="img/Biser logo B transparent 2.png" alt="logo"> </a>
       </div>
 
       <nav class="navbar">
@@ -41,15 +41,15 @@
         <div class="menu">
           <div class="menu-izq">
             <ul>
-              <li><a class="home" href="home.php"><i class="fas fa-home"></i></a></li>
+              <li><a class="home" href="home"><i class="fas fa-home"></i></a></li>
             </ul>
           </div>
 
           <div class="menu-der">
             <ul>
               <li>
-                <li><a href="perfil.php">Mi cuenta</a></li>
-                <form class="" action="logout.php" method="post">
+                <li><a href="perfil">Mi cuenta</a></li>
+                <form class="" action="logout" method="post">
                   <button type="submit" name="button">Salir</button>
                 </form>
               </li>
@@ -58,14 +58,14 @@
 
           <div class="menu-izq">
             <ul>
-              <li><a class="home" href="home.php"><i class="fas fa-home"></i></a></li>
+              <li><a class="home" href="home"><i class="fas fa-home"></i></a></li>
             </ul>
           </div>
 
           <div class="menu-der">
             <ul>
-              <li><a href="login.php">Ingresar</a></li>
-              <li><a href="registro.php">Registrate</a></li>
+              <li><a href="login">Ingresar</a></li>
+              <li><a href="registro">Registrate</a></li>
             </ul>
           </div>
         </div>
@@ -81,11 +81,11 @@
 
     <!--FOOTER-->
     <footer>
-      <div class="divFoot"><a href="home.php">Home</a></div>
+      <div class="divFoot"><a href="home">Home</a></div>
       |
-      <div class="divFoot"><a href="faq.php">Preguntas Frecuentes</a></div>
+      <div class="divFoot"><a href="faq">Preguntas Frecuentes</a></div>
       |
-      <div class="divFoot"><a href="contacto.php">Contacto</a></div>
+      <div class="divFoot"><a href="contacto">Contacto</a></div>
     </footer>
   </body>
 </html>

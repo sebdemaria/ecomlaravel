@@ -28,7 +28,7 @@
           </p>
 
           <!-- Recuperar contraseña -->
-          <a class="olviPass" href="recuperarContrasenia.php">¿Olvidaste tu contraseña?</a>
+          <a class="olviPass" href="recuperarContrasenia">¿Olvidaste tu contraseña?</a>
 
           <!-- Recordarme -->
           <div class="checkbox">

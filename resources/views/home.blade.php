@@ -73,7 +73,7 @@
               <p>
                 3 cuotas sin interés de $3.499,99
               </p>
-              <a id="ver-mas" href="detalle-prod.php" class="btn btn-primary">Ver Más</a>
+              <a id="ver-mas" href="detalle-prod" class="btn btn-primary">Ver Más</a>
             </div>
           </li>
           <li>
