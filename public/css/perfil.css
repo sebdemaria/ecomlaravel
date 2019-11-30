@@ -1,15 +1,12 @@
 .container-fluid{
   width: 100%;
   padding: 0;
-  height: 100%;
   align-content: center;
 }
 
 main{
   width: 100%;
-  display: inline-flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 h1{
@@ -51,11 +48,14 @@ h1{
 }
 
 .formulario{
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .datos{
     text-align: center;
+    width: 100%;
 }
 
 .campos{

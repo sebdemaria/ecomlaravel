@@ -2,7 +2,7 @@
 
 //Home
 Route::get('/home', function () {
-    return view("home");
+    return view('home');
 });
 
 //Home
@@ -12,7 +12,7 @@ Route::get('/plantillaprueba', function () {
 
 //Registro
 Route::get('/registro', function () {
-    return ("Este es el registro");
+    return view('registro');
 });
 Route::post('/registro', function () {
     return ("Este es el registro por post");
@@ -28,7 +28,7 @@ Route::post('/home', function () {
 
 //Perfil
 Route::get('/perfil', function () {
-    return ("Este es el perfil");
+    return view('perfil');
 });
 Route::post('/perfil', function () {
     return ("Este es el perfil por  post");
