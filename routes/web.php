@@ -17,7 +17,7 @@ Route::post('/registro', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::post('/home', function () {
+Route::post('/login', function () {
     return ("Este es el login por post");
 });
 
@@ -30,13 +30,13 @@ Route::post('/perfil', function () {
 });
 
 //FAQ
-Route::get('/FAQ', function () {
-    return ("Este es el FAQ");
+Route::get('/faq', function () {
+    return view("faq");
 });
 
 //Contacto
 Route::get('/contacto', function () {
-    return ("Este es el contacto");
+    return view("contacto");
 });
 
 //Productos
@@ -45,18 +45,18 @@ Route::get('/productos', function () {
 });
 
 //Detalle producto
-Route::get('/productos/{id}', function ($id) {
-    return ("Este es el producto $id");
+Route::get('/detalle-prod', function () {
+    return view("detalle-prod");
 });
 
 //Carrito
-Route::post('/carrito', function () {
-    return ("Este es el carrito");
+Route::get('/carrito', function () {
+    return view("carrito");
 });
 
 //Checkout
 Route::get('/checkout', function () {
-    return ("Este es el checkout");
+    return view("checkout");
 });
 
 ?>
