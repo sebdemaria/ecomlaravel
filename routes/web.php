@@ -20,7 +20,7 @@ Route::post('/registro', function () {
 
 //Login
 Route::get('/login', function () {
-    return ("Este es el login");
+    return view('login');
 });
 Route::post('/home', function () {
     return ("Este es el login por post");
