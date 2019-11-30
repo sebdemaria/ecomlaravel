@@ -1,11 +1,10 @@
 @extends('main')
 <html lang="en" dir="ltr">
     <head>
-
-        <!--//require_once('headerConfigs.php');-->
-        @include('headerConfigs')
+      @section('headerConfigs')
       <title>Home</title>
       <link rel="stylesheet" href="/css/home.css">
+      @endsection
     </head>
 
     <body>
