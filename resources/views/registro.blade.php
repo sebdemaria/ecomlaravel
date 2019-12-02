@@ -12,45 +12,45 @@
       @section('main')
       <div class="cajaPrincipal">
         <h1>Unite a nuestra familia</h1>
-        <form class="formulario" action="registro.php" method="POST" enctype="multipart/form-data">
+        <form class="formulario" action="/registro" method="POST" enctype="multipart/form-data">
+          {{csrf_field()}}
 
           <!-- Nombre -->
           <div class="datos">
             <p>
-              <input id= "nombre" type="text" name="nombre" value="Aca iria un value" placeholder ="Ingrese su nombre">
+              <input id= "nombre" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Ingrese su nombre">
             </p>
-            <p>
-              Aca iria un error de tipeo
+              {{ $errors->first('nombre') }}
             </p>
           </div>
 
           <!-- Apellido -->
           <div class="datos">
             <p>
-              <input id="apellido" type="text" name="apellido" value="Aca iria un value" placeholder="Ingrese su apellido">
+              <input id="apellido" type="text" name="apellido" value="{{old('apellido')}}" placeholder="Ingrese su apellido">
             </p>
             <p>
-              Aca iria un error de tipeo
+              {{ $errors->first('apellido') }}
             </p>
           </div>
 
           <!-- Username -->
           <div class="datos">
             <p>
-              <input id="username" type="text" name="username" value="Aca iria un value" placeholder="Ingrese su usuario">
+              <input id="username" type="text" name="username" value="{{old('username')}}" placeholder="Ingrese su usuario">
             </p>
             <p>
-              Aca iria un error de tipeo
+              {{ $errors->first('username') }}
             </p>
           </div>
 
           <!-- E-mail -->
           <div class="datos">
             <p>
-              <input id="email" type="text" name="email" value="Aca iria un value" placeholder="Ingrese su email">
+              <input id="email" type="text" name="email" value="{{old('email')}}" placeholder="Ingrese su email">
             </p>
             <p>
-              Aca iria un error de tipeo
+              {{ $errors->first('email') }}
             </p>
           </div>
 
@@ -60,17 +60,17 @@
               <input id="password" type="password" name="password" value="" placeholder="Ingrese su contraseña">
             </p>
             <p>
-              Aca iria un error de tipeo
+              <p>{{ $errors->first('password') }}</p>
             </p>
           </div>
 
           <!-- Confirmar contraseña -->
           <div class="datos">
             <p>
-              <input id="passwordConf" type="password" name="passwordConf" value="" placeholder="Ingrese su contraseña">
+              <input id="password_confirmation" type="password" name="password_confirmation" value="" placeholder="Ingrese su contraseña">
             </p>
             <p>
-              Aca iria un error de tipeo
+              <p>{{ $errors->first('password_confirmation') }}</p>
             </p>
           </div>
 
@@ -80,10 +80,10 @@
               Fecha de nacimiento
             </p>
             <p>
-              <input class="campos" id="fecha" type="date" name="fecha" value="Aca iria un value" placeholder="Fecha de nacimiento" >
+              <input class="campos" id="fecha" type="date" name="fecha" value="{{old('fecha')}}" placeholder="Fecha de nacimiento" >
             </p>
             <p>
-              Aca iria un error de tipeo
+              {{ $errors->first('fecha') }}
             </p>
           </div>
 
@@ -96,7 +96,7 @@
               <input class="avatar" type="file" id="avatar" name="avatar" value="">
             </p>
             <p>
-              Aca iria un error de tipeo
+              {{ $errors->first('avatar') }}
             </p>
           </div>
 
@@ -118,7 +118,6 @@
               </div>
             </p>
           </div>
-
         </form>
       </div>
       @endsection

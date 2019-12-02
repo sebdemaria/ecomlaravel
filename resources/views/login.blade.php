@@ -12,10 +12,10 @@
       @section('main')
       <div class="container">
         <h1>¡Hola! <br> por favor ingresá tu usuario y contraseña</h1>
-        <form action="login.php" method="POST">
+        <form action="login" method="POST">
           <!-- E-mail -->
           <div class="datos">
-            <input class="campos" id="formSup" placeholder="E-mail" name="email" type="text" value="aca iria el value del mail">
+            <input class="campos" id="formSup" placeholder="E-mail" name="email" type="text" value="">
           </div>
 
           <!-- Password -->

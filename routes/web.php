@@ -9,9 +9,7 @@ Route::get('/home', function () {
 Route::get('/registro', function () {
     return view('registro');
 });
-Route::post('/registro', function () {
-    return ("Este es el registro por post");
-});
+Route::post('/registro', 'registroController@agregarUsuario');
 
 //Login
 Route::get('/login', function () {
@@ -19,6 +17,11 @@ Route::get('/login', function () {
 });
 Route::post('/login', function () {
     return ("Este es el login por post");
+});
+
+//Recuperar contraseña
+Route::get('/recuperarPassword', function () {
+    return view('recuperarPassword');
 });
 
 //Perfil

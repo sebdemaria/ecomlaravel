@@ -16,7 +16,7 @@
             Hola nombredeusuario!
           </p>
           <p>
-            <img class="fotoPerfil" src="avatardelusuario" alt="Avatar">
+            <img class="fotoPerfil" src="/storage/{{$usuarioNuevo->avatar}}" alt="Avatar">
           </p>
         </div>
 
