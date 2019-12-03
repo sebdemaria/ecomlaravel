@@ -15,9 +15,7 @@ Route::post('/registro', 'registroController@agregarUsuario');
 Route::get('/login', function () {
     return view('login');
 });
-Route::post('/login', function () {
-    return ("Este es el login por post");
-});
+Route::post('/login', 'loginController@loguearUsuario');
 
 //Recuperar contraseña
 Route::get('/recuperarPassword', function () {

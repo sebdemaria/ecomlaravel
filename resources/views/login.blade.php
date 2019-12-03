@@ -13,6 +13,8 @@
       <div class="container">
         <h1>¡Hola! <br> por favor ingresá tu usuario y contraseña</h1>
         <form action="login" method="POST">
+          {{csrf_field()}}
+
           <!-- E-mail -->
           <div class="datos">
             <input class="campos" id="formSup" placeholder="E-mail" name="email" type="text" value="">
@@ -24,7 +26,6 @@
           </div>
 
           <p>
-            Aca iria un error de logueo
           </p>
 
           <!-- Recuperar contraseña -->

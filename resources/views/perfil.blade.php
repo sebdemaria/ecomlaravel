@@ -13,10 +13,10 @@
       <div class="cajaPrincipal">
         <div>
           <p class="perfil">
-            Hola nombredeusuario!
+            Hola {{$nombre}}
           </p>
           <p>
-            <img class="fotoPerfil" src="/storage/{{$usuarioNuevo->avatar}}" alt="Avatar">
+            <img class="fotoPerfil" src="/storage/{{$avatar}}" alt="Avatar">
           </p>
         </div>
 
@@ -25,14 +25,14 @@
           <!--Username-->
           <div class="datos">
             <p>
-              usernamedelusuario
+              {{$username}}
             </p>
           </div>
 
           <!--Email-->
           <div class="datos">
             <p>
-              emaildelusuario
+              {{$email}}
             </p>
           </div>
 
