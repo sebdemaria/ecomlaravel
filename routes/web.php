@@ -11,16 +11,8 @@ Route::get('/registro', function () {
 });
 Route::post('/registro', 'registroController@agregarUsuario');
 
-//Login
-Route::get('/login', function () {
-    return view('login');
-});
-Route::post('/login', 'loginController@loguearUsuario');
 
-//Recuperar contraseña
-Route::get('/recuperarPassword', function () {
-    return view('recuperarPassword');
-});
+
 
 //Perfil
 Route::get('/perfil', function () {
@@ -60,4 +52,7 @@ Route::get('/checkout', function () {
     return view("checkout");
 });
 
-?>
+
+//Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();

@@ -50,6 +50,7 @@
               <li>
                 <li><a href="perfil">Mi cuenta</a></li>
                 <form class="" action="logout" method="post">
+                  @csrf
                   <button type="submit" name="button">Salir</button>
                 </form>
               </li>
