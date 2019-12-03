@@ -13,10 +13,10 @@
       <div class="cajaPrincipal">
         <div>
           <p class="perfil">
-            Hola {{$nombre}}
+            Hola {{$usuarioAutenticado->name}}
           </p>
           <p>
-            <img class="fotoPerfil" src="/storage/{{$avatar}}" alt="Avatar">
+            <img class="fotoPerfil" src="/storage/{{$usuarioAutenticado->avatar}}" alt="Avatar">
           </p>
         </div>
 
@@ -25,14 +25,14 @@
           <!--Username-->
           <div class="datos">
             <p>
-              {{$username}}
+              Aca iria el nombre de usuario pero todavia no lo hicimos
             </p>
           </div>
 
           <!--Email-->
           <div class="datos">
             <p>
-              {{$email}}
+              {{$usuarioAutenticado->email}}
             </p>
           </div>
 
@@ -72,73 +72,8 @@
               <label for="provincias">
                 Provincia: Aca iria un value
               </label>
-              <select class="" selected="chaco" name="provincia" id="provincias">
-                <option value="buenosaires">
-                  Buenos Aires
-                </option>
-                <option value="catamarca">
-                  Catamarca
-                </option>
-                <option value="chaco">
-                  Chaco
-                </option>
-                <option value="chubut">
-                  Chubut
-                </option>
-                <option value="cordoba">
-                  Córdoba
-                </option>
-                <option value="corrientes">
-                  Corrientes
-                </option>
-                <option value="entrerios">
-                  Entre Ríos
-                </option>
-                <option value="formosa">
-                  Formosa
-                </option>
-                <option value="jujuy">
-                  Jujuy
-                </option>
-                <option value="lapampa">
-                  La Pampa
-                </option>
-                <option value="larioja">
-                  La Rioja
-                </option>
-                <option value="mendoza">
-                  Mendoza
-                </option>
-                <option value="misiones">
-                  Misiones
-                </option>
-                <option value="neuquen">
-                  Neuquen
-                </option>
-                <option value="rionegro">
-                  Rio Negro
-                </option>
-                <option value="salta">
-                  Salta
-                </option>
-                <option value="sanjuan">
-                  San Juan
-                </option>
-                <option value="santacruz">
-                  Santa Cruz
-                </option>
-                <option value="santafe">
-                  Santa Fé
-                </option>
-                <option value="santiagodelestero">
-                  Santiago del Estero
-                </option>
-                <option value="tierradelfuego">
-                  Tierra del Fuego
-                </option>
-                <option value="tucuman">
-                  Tucumán
-                </option>
+              <select class="" name="provincia" id="provincias">
+                <!-- ACA VAN LAS PROVINCIAS -->
               </select>
             </p>
             <p>
@@ -161,3 +96,29 @@
     </main>
   </body>
 </html>
+
+<script type="text/javascript">
+/**
+* Se pide un json a una API, lo convertimos y luego lo adaptamos al sitio.
+**/
+  function getProvincias(){
+    fetch('https://apis.datos.gob.ar/georef/api/provincias')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      for(let i = 0; i<myJson['provincias'].length;i++){
+        let provincias = document.querySelector("#provincias");
+        let option = document.createElement('option');
+        option.text = myJson['provincias'][i].nombre;
+        option.value = option.text;
+        provincias.appendChild(option);
+      }
+      
+    });
+  }
+
+  window.onload = function() {
+    getProvincias()
+  }
+</script>

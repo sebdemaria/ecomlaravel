@@ -15,9 +15,8 @@ Route::post('/registro', 'registroController@agregarUsuario');
 
 
 //Perfil
-Route::get('/perfil', function () {
-    return view('perfil');
-});
+Route::get('/perfil', 'HomeController@listarPerfil');
+
 Route::post('/perfil', function () {
     return ("Este es el perfil por  post");
 });
