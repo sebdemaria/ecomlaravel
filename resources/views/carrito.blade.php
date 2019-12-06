@@ -1,71 +1,52 @@
-@extends('plantilla')
-<html lang="en" dir="ltr">
-    <head>
-      @section('headerConfigs')
-      <title>Mi Carrito</title>
-      <link rel="stylesheet" href="css/carrito.css">
-      @endsection
-    </head>
+@extends('layouts.plantilla')
 
-    <body>
+<!-- HEAD -->
+@section('headerConfigs')
+  <title>Carrito</title>
+  <link rel="stylesheet" href="/css/carrito.css">
+@endsection
 
-      <div class="container-fluid">
+<!-- MAIN -->
+@section('main')
+  <h1>
+    Mi carrito
+  </h1>
 
-        @section('main')
+  <div class="lista-prod">
+    <ul>
+      <li>
 
-          <main>
+        <div class="imagen">
+          <img src="img/samsung-a50.png" alt="samsung a50">
+        </div>
 
-            <h1>
-              Mi carrito
-            </h1>
+        <div class="descrip-prod">
+          <h3><strong>Samsung A50 64GB 2019</strong></h3>
+          <p class="descripcion">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
 
-            <div class="lista-prod">
+          <div class="button">
+            <button id="button-quitar" type="button-compra" class="btn btn-primary">Quitar</button>
+          </div>
 
-              <ul>
-                <li>
+          <div class="button">
+            <button id="agregar" type="button-compra" class="btn btn-success">-   1   +</button>
+          </div>
+        </div>
 
-                  <div class="imagen">
-                    <img src="img/samsung-a50.png" alt="samsung a50">
-                  </div>
+      </li>
+    </ul>
+    <p class="total">
+      Subtotal $10.500
+      <br>
+      <br>
+      Total $10.500
+    </p>
 
-                  <div class="descrip-prod">
-
-                    <h3><strong>Samsung A50 64GB 2019</strong></h3>
-                    <p class="descripcion">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <div class="button">
-                      <button id="button-quitar" type="button-compra" class="btn btn-primary">Quitar</button>
-                    </div>
-
-                    <div class="button">
-                      <button id="agregar" type="button-compra" class="btn btn-success">-   1   +</button>
-                    </div>
-
-                  </div>
-                </li>
-
-              </ul>
-              <p class="total">
-                Subtotal $10.500
-                <br>
-                <br>
-                Total $10.500
-
-              </p>
-
-              <a href="checkout">
-              <button id="button-confirmar" type="button" class="btn btn-outline-primary">Confirmar compra</button>
-              </a>
-
-            </div>
-
-        </main>
-
-      </div>
-
-
-      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-      @endsection
-    </body>
-</html>
+    <a href="checkout">
+      <button id="button-confirmar" type="button" class="btn btn-outline-primary">Confirmar compra</button>
+    </a>
+  </div>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+@endsection

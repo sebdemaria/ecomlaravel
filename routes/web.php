@@ -1,24 +1,20 @@
 <?php
 
+Route::get('/', function () {
+    return view('home');
+});
+
 //Home
 Route::get('/home', function () {
     return view('home');
 });
 
-//Registro
-Route::get('/registro', function () {
-    return view('registro');
-});
-Route::post('/registro', 'registroController@agregarUsuario');
-
-
-
-
 //Perfil
-Route::get('/perfil', 'HomeController@listarPerfil');
-
+Route::get('/perfil', function () {
+    return view('perfil');
+});
 Route::post('/perfil', function () {
-    return ("Este es el perfil por  post");
+    return view('perfil');
 });
 
 //FAQ
@@ -51,7 +47,8 @@ Route::get('/checkout', function () {
     return view("checkout");
 });
 
-
-//Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes();
+//Logout
+Route::get('/logout', 'Auth\LoginController@logout');
+//Home
+//Route::get('/home', 'HomeController@index')->name('home');

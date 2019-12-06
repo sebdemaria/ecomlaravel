@@ -1,0 +1,57 @@
+header{
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(210,210,210);
+}
+
+/*imagen del logo*/
+.logo img{
+  width: 5%;
+  padding: 1%;
+  margin-left: 1.5%;
+  float: left;
+}
+
+/*el buscador*/
+.buscador{
+  width: 60%;
+  padding: 3%;
+  float: left;
+}
+#barraDelBuscador{
+  width: 90%;
+  padding: 0.5%;
+  border-radius: 4px;
+  border-style: none;
+  background-color: rgb(240,240,240);
+}
+.buscador button{
+  color: white;
+  width: 2%;
+  border: none;
+  background-color: inherit;
+}
+
+/*carrito, inicio de sesion y registro*/
+.conjunto{
+  width: 20%;
+  padding: 2%;
+  float: left;
+}
+.conjunto ul li {
+  list-style-type: none;
+  text-align: center;
+  width: 28%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+}
+
+header a{
+  text-decoration: none;
+  display: block;
+  color: white;
+}
