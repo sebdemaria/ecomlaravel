@@ -28,14 +28,12 @@ h1{
 .perfil{
   text-align: center;
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 .fotoPerfil{
   width: 20%;
   margin-bottom: 10px;
-  margin-left: 40%;
-  margin-right: 40%;
   border-radius: 10%;
   box-sizing: border-box;
 }
@@ -55,7 +53,7 @@ h1{
 
 .datos{
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 
 .campos{
@@ -73,12 +71,33 @@ h1{
 }
 
 p{
-    font-size: 16px;
+  font-size: 16px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#parrafo-prov{
+  display: block
 }
 
 .crearcuenta{
   width: 100%;
   text-align: center;
+}
+
+select{
+  width: 70%;
+}
+
+label{
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  select{
+    width: 40%;
+  }
 }
 
 @media (min-width: 1024px){
@@ -103,19 +122,15 @@ p{
 
   .fotoPerfil{
     width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
     border-radius: 10%;
     box-sizing: border-box;
   }
 
 
   main div .datos{
-    width: 40%;
+    width: 100%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
     text-align: center;
     float: left;
   }
@@ -124,5 +139,9 @@ p{
     width: 100%;
     text-align: center;
     float: left;
+  }
+
+  select{
+    width: 20%;
   }
 }

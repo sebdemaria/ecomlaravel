@@ -67,7 +67,7 @@
 
       <!--Provincia-->
       <div class="datos">
-        <p>
+        <p id="parrafo-prov">
           <label for="provincias">
             Provincia: Aca iria un value
           </label>

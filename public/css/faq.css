@@ -35,6 +35,11 @@ p{
   background-color: #FAD7A0;
 }
 
+button{
+  text-decoration: none;
+  color: black!important;
+}
+
 .card-body{
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   margin-top: 3px;
@@ -76,6 +81,10 @@ p {
   padding: 15px;
   border-radius: 4%;
   margin-bottom: 15px;
+}
+
+#conf{
+  color: white!important;
 }
 
 section a button{

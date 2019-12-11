@@ -11,14 +11,19 @@
   <h1>
     ¿Con qué podemos ayudarte?
   </h1>
+
+  <div class="accordion" id="accordionExample">
   <div class="card">
-    <div class="card-header">
-      ¿Cómo realizar mi compra?
-      <i class="fas fa-angle-left"></i>
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          ¿Cómo realizar mi compra?
+        </button>
+      </h2>
     </div>
 
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
         <p>
           <ol class="pasos">
             <li>
@@ -38,18 +43,19 @@
             </li>
           </ol>
         </p>
-      </blockquote>
+      </div>
     </div>
   </div>
-
   <div class="card">
-    <div class="card-header">
-      ¿Cómo me registro?
-      <i class="fas fa-angle-left"></i>
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          ¿Cómo me registro?
+        </button>
+      </h2>
     </div>
-
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
         <p>
           <ol class="pasos">
             <li>
@@ -63,18 +69,19 @@
             </li>
           </ol>
         </p>
-      </blockquote>
+      </div>
     </div>
   </div>
-
   <div class="card">
-    <div class="card-header">
-      ¿Qué formas de pago tenemos disponibles?
-      <i class="fas fa-angle-left"></i>
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ¿Qué formas de pago tenemos disponibles?
+        </button>
+      </h2>
     </div>
-
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
         <p>
           <ol>
             Para tu comodidad, contamos con diversas formas de pago confiables, rápidas y seguras:
@@ -93,18 +100,19 @@
             </li>
           </ol>
         </p>
-      </blockquote>
+      </div>
     </div>
   </div>
-
   <div class="card">
-    <div class="card-header">
-      ¿Es seguro comprar en Biser?
-      <i class="fas fa-angle-left"></i>
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ¿Es seguro comprar en Biser?
+        </button>
+      </h2>
     </div>
-
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
         <p>
           Sí, respetamos 100% tu derecho a la protección de datos, por esta razón, utilizamos los más altos niveles de seguridad para proteger tanto tus datos personales como los de tus pagos.
 
@@ -112,16 +120,18 @@
 
           Por favor, no compartas tu usuario ni la contraseña que te identifican en nuestro sitio web, pues son el acceso a tu cuenta y a toda tu información personal.
         </p>
-      </blockquote>
+      </div>
     </div>
   </div>
+</div>
 
   <section class="util">
     <h3>
       ¿Fue útil esta información?
     </h3>
-    <a href="#"><button type="button" class="btn btn-primary">Si </button></a>
-    <a href="#"><button type="button" class="btn btn-primary">No</button></a>
+    <a href="#"><button type="button" id="conf" class="btn btn-primary">Si </button></a>
+    <a href="#"><button type="button"
+      id="conf" class="btn btn-primary">No</button></a>
   </section>
 
   <br>
