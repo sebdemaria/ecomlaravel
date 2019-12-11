@@ -1,21 +1,12 @@
 <?php
 
-Route::get('/', function () {
-    return view('home');
-});
-
 //Home
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
 
 //Perfil
-Route::get('/perfil', function () {
-    return view('perfil');
-});
-Route::post('/perfil', function () {
-    return view('perfil');
-});
+Route::get('/perfil', 'PerfilController@listar');
+Route::post('/perfil', 'PerfilController@actualizar');
 
 //FAQ
 Route::get('/faq', function () {
