@@ -6,18 +6,18 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+  use Notifiable;
 
-    protected $fillable = [
-        'nombre', 'apellido', 'username', 'email','password','fecha','avatar','telefono','direccion','localidad','provincia', 'isAdmin'
-    ];
+  protected $fillable = [
+    'nombre', 'apellido', 'username', 'email','password','fecha','avatar','telefono','direccion','localidad','provincia', 'isAdmin', 'idProducto'
+  ];
 
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+  protected $hidden = [
+    'password', 'remember_token',
+  ];
 
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+  protected $casts = [
+    'email_verified_at' => 'datetime',
+  ];
 }
 ?>
