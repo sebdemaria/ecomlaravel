@@ -11,10 +11,10 @@
   <div class="cajaPrincipal">
     <div>
       <p class="perfil">
-        Hola usuario
+        Hola, {{$usuario->nombre}}!
       </p>
       <p>
-        <img class="fotoPerfil" src="" alt="Avatar">
+        <img class="fotoPerfil" src="storage/{{$usuario->avatar}}" alt="Avatar">
       </p>
     </div>
 
@@ -24,21 +24,21 @@
       <!--Username-->
       <div class="datos">
         <p>
-          Aca iria el nombre de usuario pero todavia no lo hice
+          {{$usuario->username}}
         </p>
       </div>
 
       <!--Email-->
       <div class="datos">
         <p>
-          Aca iria el mail del usuario ahr
+          {{$usuario->email}}
         </p>
       </div>
 
       <!--Teléfono-->
       <div class="datos">
         <p>
-          <input id="telefono" type="text" name="telefono" value="Aca iria un value" placeholder="Teléfono" >
+          <input id="telefono" type="text" name="telefono" value="{{$usuario->telefono}}" placeholder="Teléfono" >
         </p>
         <p>
           Aca iria un error de tipeo
@@ -48,7 +48,7 @@
       <!--Dirección-->
       <div class="datos">
         <p>
-          <input id="direccion" type="text" name="direccion" value="Aca iria un value" placeholder="Ingrese su direccion" >
+          <input id="direccion" type="text" name="direccion" value="{{$usuario->direccion}}" placeholder="Ingrese su direccion" >
         </p>
         <p>
           Aca iria un error de tipeo
@@ -58,7 +58,7 @@
       <!--Localidad-->
       <div class="datos">
         <p>
-          <input id="localidad" type="text" name="localidad" value="Aca iria un value" placeholder="Ingrese la localidad" >
+          <input id="localidad" type="text" name="localidad" value="{{$usuario->localidad}}" placeholder="Ingrese la localidad" >
         </p>
         <p>
           Aca iria un error de tipeo
