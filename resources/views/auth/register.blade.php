@@ -10,13 +10,13 @@
 @section('main')
   <div class="cajaPrincipal">
     <h1>Unite a nuestra familia</h1>
-    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+    <form class="formulario" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
       @csrf
 
       <!-- Nombre -->
       <div class="datos">
         <p>
-          <input id= "nombre" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Ingrese su nombre">
+          <input id= "nombre" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Nombre">
         </p>
         <p>
           Aca iria un error
@@ -26,7 +26,7 @@
       <!-- Apellido -->
       <div class="datos">
         <p>
-          <input id="apellido" type="text" name="apellido" value="{{old('apellido')}}" placeholder="Ingrese su apellido">
+          <input id="apellido" type="text" name="apellido" value="{{old('apellido')}}" placeholder="Apellido">
         </p>
         <p>
           Aca iria un error
@@ -34,9 +34,9 @@
       </div>
 
       <!-- Username -->
-      <div>
+      <div class="datos">
         <p>
-          <input id="username" type="text" name="username" value="{{old('username')}}" placeholder="Ingrese su usuario">
+          <input id="username" type="text" name="username" value="{{old('username')}}" placeholder="Usuario">
         </p>
         <p>
           Aca iria un error
@@ -46,7 +46,7 @@
       <!-- E-mail -->
       <div class="datos">
         <p>
-          <input id="email" type="text" name="email" value="{{old('email')}}" placeholder="Ingrese su email">
+          <input id="email" type="text" name="email" value="{{old('email')}}" placeholder="Email">
         </p>
         <p>
           Aca iria un error
@@ -56,7 +56,7 @@
       <!-- Password -->
       <div class="datos">
         <p>
-          <input id="password" type="password" name="password" value="" placeholder="Ingrese su contraseña">
+          <input id="password" type="password" name="password" value="" placeholder="Contraseña">
         </p>
         <p>
           Aca iria un error
@@ -66,7 +66,7 @@
       <!-- Confirmar contraseña -->
       <div class="datos">
         <p>
-          <input id="password_confirmation" type="password" name="password_confirmation" value="" placeholder="Ingrese su contraseña">
+          <input id="password_confirmation" type="password" name="password_confirmation" value="" placeholder="Repita su contraseña">
         </p>
         <p>
           Aca iria un error

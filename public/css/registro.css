@@ -65,7 +65,7 @@ p{
   justify-content: space-evenly;
   display: inline-flex;
   align-items: center;
-  width: 93%;
+  width: 78%;
 }
 
 #terminos{
@@ -92,8 +92,14 @@ div .declaro{
     width: 100%;
   }
 
+  main div .datos{
+    width: 40%;
+    margin-top: 2px;
+    margin-bottom: 20px;
+  }
+
   div .declaro{
-    width: 70%;
+    width: 56%;
   }
 }
 

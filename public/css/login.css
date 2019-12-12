@@ -1,17 +1,10 @@
-.container-fluid{
-  padding: 0;
-}
-
 main{
   width: 100%;
 }
 
 .container {
-  background-color: #FCFCFC;
   width: 100%;
-  border-radius: 0.5%;
   text-align: center;
-  flex-wrap: wrap;
   padding: 25px;
 }
 
@@ -75,6 +68,8 @@ div .datos{
   width: 110px;
 }
 
-footer{
-  position: absolute;
+@media (min-width: 768px) {
+  footer{
+    position: absolute;
+  }
 }

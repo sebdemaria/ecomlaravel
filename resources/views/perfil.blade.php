@@ -9,7 +9,7 @@
 <!-- MAIN -->
 @section('main')
   <div class="cajaPrincipal">
-    <div>
+    <div class="bienvenida">
       <p class="perfil">
         Hola usuario
       </p>

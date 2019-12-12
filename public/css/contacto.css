@@ -7,7 +7,7 @@
 }
 
 main{
-  width: 90%;
+  width: 100%;
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -15,14 +15,15 @@ main{
 
 h1{
   width: 100%;
-  margin: 35px 0;
+  margin: 20px 0;
   text-align: center;
   font-size: 32px;
 }
 
 p{
   background-image: none;
-  padding-left: 10px;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .cajaPrincipal{
@@ -30,8 +31,6 @@ p{
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
-  padding-top: 0;
 }
 
 #i{
@@ -66,6 +65,7 @@ p{
   justify-content: center;
   font-size: 12px;
   font-weight: bold;
+  text-align: center;
 }
 
 .email{
@@ -95,7 +95,7 @@ label{
 }
 
 .button{
-  margin-bottom: 15px;
+  margin-bottom: 53px;
 }
 
 .carrito i{
@@ -109,6 +109,10 @@ label{
 
   .textoContacto{
     width: 100%;
+  }
+
+  .button{
+    margin-bottom: 45px;
   }
 }
 
@@ -143,5 +147,9 @@ label{
 
   main div .textoContacto{
         font-weight: bold;
+  }
+
+  .button{
+    margin-bottom: 13px;
   }
 }

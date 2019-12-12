@@ -25,13 +25,19 @@ h1{
  justify-content: center;
 }
 
+.bienvenida{
+  width: 100%;
+}
+
 .perfil{
   text-align: center;
   font-size: 30px;
   margin-top: 16px;
+  width: 100%;
 }
 
 .fotoPerfil{
+  text-align: center;
   width: 20%;
   margin-bottom: 10px;
   border-radius: 10%;
@@ -95,6 +101,11 @@ label{
 }
 
 @media (min-width: 768px){
+  .datos{
+      text-align: center;
+      width: 50%;
+  }
+
   select{
     width: 40%;
   }
@@ -128,9 +139,7 @@ label{
 
 
   main div .datos{
-    width: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 50%;
     text-align: center;
     float: left;
   }
@@ -142,6 +151,10 @@ label{
   }
 
   select{
-    width: 20%;
+    width: 40%;
+  }
+
+  footer{
+    position: absolute;
   }
 }

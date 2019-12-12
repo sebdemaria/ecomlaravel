@@ -2,7 +2,7 @@
 
 <!-- HEAD -->
 @section('headerConfigs')
-  <title>FAQ</title>
+  <title>Biser - Preguntas Frecuentes</title>
   <link rel="stylesheet" href="/css/faq.css">
 @endsection
 
@@ -106,7 +106,7 @@
   <div class="card">
     <div class="card-header" id="headingFour">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           ¿Es seguro comprar en Biser?
         </button>
       </h2>
