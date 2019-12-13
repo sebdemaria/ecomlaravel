@@ -11,10 +11,10 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Estilos y fuentes -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fontawesome/css/all.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="/img/favicon.ico">
     @yield('headerConfigs')
   </head>
 
@@ -26,8 +26,8 @@
 
       <!-- Logo -->
       <div class="divlogo">
-        <a href="home"> <img class="logo" id="logoLargo" src="img/Biser logo transparent 2.png" alt="logo"> </a>
-        <a href="home"> <img class="logo" id="logoCorto" src="img/Biser logo B transparent 2.png" alt="logo"> </a>
+        <a href="home"> <img class="logo" id="logoLargo" src="/img/Biser logo transparent 2.png" alt="logo"> </a>
+        <a href="home"> <img class="logo" id="logoCorto" src="/img/Biser logo B transparent 2.png" alt="logo"> </a>
       </div>
 
       <!-- Buscador -->
