@@ -56,4 +56,8 @@
   <div class="paginacion">
     {{$productos->links()}}
   </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff47f5bb874e913ea3a5fe1b7261ce8fe0938fb8
 @endsection
