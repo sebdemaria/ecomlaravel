@@ -23,7 +23,6 @@ Route::get('/productos', 'ProductosController@listar');
 
 //Detalle producto
 Route::get('/detalle-prod/{id}', 'DetalleProdController@actualizarEstado');
-//Route::post('/detalle-prod', 'DetalleProdController@actualizarEstado');
 
 //Carrito
 Route::get('/carrito', function () {

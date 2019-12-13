@@ -19,7 +19,7 @@
           <input id= "nombre" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Nombre">
         </p>
         <p>
-          Aca iria un error
+
         </p>
       </div>
 
@@ -29,7 +29,7 @@
           <input id="apellido" type="text" name="apellido" value="{{old('apellido')}}" placeholder="Apellido">
         </p>
         <p>
-          Aca iria un error
+
         </p>
       </div>
 
@@ -39,7 +39,7 @@
           <input id="username" type="text" name="username" value="{{old('username')}}" placeholder="Usuario">
         </p>
         <p>
-          Aca iria un error
+
         </p>
       </div>
 
@@ -49,7 +49,7 @@
           <input id="email" type="text" name="email" value="{{old('email')}}" placeholder="Email">
         </p>
         <p>
-          Aca iria un error
+
         </p>
       </div>
 
@@ -59,7 +59,7 @@
           <input id="password" type="password" name="password" value="" placeholder="Contraseña">
         </p>
         <p>
-          Aca iria un error
+
         </p>
       </div>
 
@@ -67,9 +67,6 @@
       <div class="datos">
         <p>
           <input id="password_confirmation" type="password" name="password_confirmation" value="" placeholder="Repita su contraseña">
-        </p>
-        <p>
-          Aca iria un error
         </p>
       </div>
 
@@ -82,7 +79,7 @@
           <input class="campos" id="fecha" type="date" name="fecha" value="{{old('fecha')}}" placeholder="Fecha de nacimiento" >
         </p>
         <p>
-          Aca iria un error
+
         </p>
       </div>
 
@@ -95,7 +92,7 @@
           <input class="avatar" type="file" id="avatar" name="avatar" value="">
         </p>
         <p>
-          Aca iria un error
+
         </p>
       </div>
 

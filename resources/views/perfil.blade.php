@@ -41,7 +41,11 @@
           <input id="telefono" type="text" name="telefono" value="{{$usuario->telefono}}" placeholder="Teléfono" >
         </p>
         <p>
-          Aca iria un error de tipeo
+          @error('telefono')
+            <span class="invalid-feedback" role="alert">
+              <strong>Número de teléfono no válido.</strong>
+            </span>
+          @enderror
         </p>
       </div>
 
