@@ -12,8 +12,9 @@
   overflow: hidden;
 }
 .paginacion{
-  text-align: center;
-  width: 100%;
-  margin: 0px;
-  margin-bottom: 10px;
+
+}
+
+footer{
+  position: absolute;
 }

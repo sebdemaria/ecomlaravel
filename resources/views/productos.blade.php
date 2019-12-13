@@ -14,8 +14,8 @@
         {{$producto->nombre}}
       </div>
     @endforeach
-    <div class="paginacion">
-      {{$productos->links()}}
-    </div>
+  </div>
+  <div class="paginacion">
+    {{$productos->links()}}
   </div>
 @endsection
