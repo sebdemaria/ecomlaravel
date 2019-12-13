@@ -123,11 +123,11 @@
         </div>
       </li>
       <li>
-        <div>
-          <a href="productos">Ver más</a>
-        </div>
       </li>
     </ul>
+    <div class="masProds">
+      <a id="mucho-mas" href="productos" class="btn btn-outline-primary">Ver Más</a>
+    </div>
   </div>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 @endsection

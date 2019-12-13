@@ -175,6 +175,22 @@ h3{
   font-size: 66%;
 }
 
+#mucho-mas{
+  font-size: 80%;
+  margin: 12px;
+}
+
+.masProds{
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  border-top: solid 1px lightgrey;
+}
+
+#ipad{
+  border-bottom: solid 1px lightgrey;
+}
+
 @media (min-width: 768px){
   .primavera{
     width: 50%;
