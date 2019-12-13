@@ -17,7 +17,7 @@ class PerfilController extends Controller
   {
     if(Auth::user()) {
       $usuario = Auth::user();
-      return view('perfil',compact('usuario'));
+      return view('perfil', compact('usuario'));
     }
   }
 

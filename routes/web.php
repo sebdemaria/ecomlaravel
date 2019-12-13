@@ -19,9 +19,7 @@ Route::get('/contacto', function () {
 });
 
 //Productos
-Route::get('/productos', function () {
-    return ("Un listado de los productos");
-});
+Route::get('/productos', 'ProductosController@listar');
 
 //Detalle producto
 Route::get('/detalle-prod', function () {

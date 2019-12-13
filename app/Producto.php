@@ -1,12 +1,10 @@
 <?php
-
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
 
 class Producto extends Model
 {
-  protected $fillable = [
-    'id', 'nombre', 'marca', 'precio','stock'
-  ];
+  public $table = "productos";
+  public $guarded = [];
 }
+?>

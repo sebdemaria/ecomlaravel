@@ -9,7 +9,7 @@
 <!-- MAIN -->
 @section('main')
   <div class="container">
-    <h1>¡Hola! <br> por favor ingresá tu usuario y contraseña</h1>
+    <h1>¡Hola! <br> Por favor ingresá tu usuario y contraseña</h1>
     <form action="login" method="POST">
       @csrf
 

@@ -122,6 +122,11 @@
           <a id="ver-mas" href="#" class="btn btn-primary">Ver Más</a>
         </div>
       </li>
+      <li>
+        <div>
+          <a href="productos">Ver más</a>
+        </div>
+      </li>
     </ul>
   </div>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

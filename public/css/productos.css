@@ -1,0 +1,19 @@
+.productos{
+  text-align: center;
+  width: 40%;
+  padding: 5px;
+  border: 1px black solid;
+  box-sizing: border-box;
+  float: left;
+}
+.caja-principal{
+  margin: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+.paginacion{
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 10px;
+}
