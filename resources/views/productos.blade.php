@@ -29,13 +29,8 @@
       </div>
     @endforeach
   </div>
-<<<<<<< HEAD
   <div class="paginacion">
     {{$productos->links()}}
   </div>
-=======
-    <div class="paginacion">
-      {{$productos->links()}}
-    </div>
->>>>>>> ada63ab7e2fa203f1c1e89e1f5627a465c50a985
+
 @endsection

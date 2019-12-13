@@ -1,20 +1,46 @@
 .productos{
   text-align: center;
-  width: 40%;
-  padding: 5px;
+  display: inline-flex;
+  width: 45%;
+  height: 64%;
+  margin: 5px;
+  border-radius: 5px;
   border: 1px black solid;
   box-sizing: border-box;
-  float: left;
+  flex-wrap: wrap;
 }
 .caja-principal{
-  margin: 0px;
+  margin-top: 15px;
   width: 100%;
-  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .paginacion{
-
+  margin: 15px 0;
 }
 
-footer{
-  position: absolute;
+.pagination{
+  justify-content: center;
+}
+
+.container-fluid{
+  width: 100%!important;
+  padding-right: 0!important;
+  padding-left: 0!important;
+  margin-right: 0!important;
+  margin-left: 0!important;
+}
+
+@media (min-width: 768px) {
+  .productos{
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productos{
+    width: 24%; 
+  }
 }
