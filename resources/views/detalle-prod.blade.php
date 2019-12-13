@@ -13,6 +13,32 @@
       <img src="./img/samsung-a50.png" alt="samsung a50">
     </div>
 
+    <div>
+    <p>
+      Seleccionar color:
+      <form class="colores" action="detalle-prod" method="post">
+        @csrf
+        <select name="colores">
+           <option value="negro">Negro</option>
+           <option value="rojo">Rojo</option>
+           <option value="azul">Azul</option>
+        </select>
+      </form>
+    </p>
+
+    <p>
+      Seleccionar cantidad:
+      <form class="cantidad" action="detalle-prod" method="post">
+        @csrf
+        <input type="text" name="" value="">
+    </p>
+
+    <p>
+      Total:
+    </p>
+
+    </div>
+
     <div class="descrip-prod">
       <h3><strong>Samsung A50 64GB 2019</strong></h3>
       <p class="precio">
