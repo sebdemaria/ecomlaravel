@@ -18,7 +18,7 @@
       Seleccionar color:
       <form class="colores" action="detalle-prod" method="post">
         @csrf
-        <select name="colores">
+        <select name="colores" placeholder="{{old('colores')}}">
            <option value="negro">Negro</option>
            <option value="rojo">Rojo</option>
            <option value="azul">Azul</option>
@@ -30,11 +30,11 @@
       Seleccionar cantidad:
       <form class="cantidad" action="detalle-prod" method="post">
         @csrf
-        <input type="text" name="" value="">
+        <input type="text" name="cantidad" value="" placeholder="{{old('cantidad')}}">
     </p>
 
     <p>
-      Total:
+      Total: ${{$total}}
     </p>
 
     </div>

@@ -19,7 +19,7 @@
 
         <!-- Imagen del producto -->
         <p>
-          <img src="/storage/samsung-a50.png" alt="foto-producto">
+          <img src="/storage/samsuang-a50.png" alt="foto-producto">
         </p>
 
         <!-- Botones -->
