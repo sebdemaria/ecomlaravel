@@ -15,7 +15,7 @@
           Nombre: {{$producto->nombre}}
         </p>
         <p>
-          Aca iria una imagen que voy a generar con faker
+          <img src="/storage/samsung-a50.png" alt="foto-producto">
         </p>
         <p>
           Aca va a una descripción

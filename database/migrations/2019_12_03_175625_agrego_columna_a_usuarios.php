@@ -15,7 +15,6 @@ class AgregoColumnaAUsuarios extends Migration
       $table->string('localidad')->nullable();
       $table->string('provincia')->nullable();
       $table->boolean('isAdmin')->default(false);
-      $table->integer('idProducto')->nullable();
     });
   }
   //Borro las columnas del usuario
