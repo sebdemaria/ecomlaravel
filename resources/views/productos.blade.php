@@ -17,7 +17,7 @@
 
         <!-- Imagen del producto -->
         <p>
-          <img src="/storage/samsuang-a50.png" alt="foto-producto">
+          <img src="/storage/samsung-a50.png" alt="foto-producto">
         </p>
 
         <!-- Nombre del producto -->
@@ -36,9 +36,12 @@
           Precio: ${{$producto->precio}}
         </p>
           <!--Ver más -->
-          <div class="button">
-            <a href="detalle-prod"><button id="button-agregar" type="button" class="btn btn-outline-primary">Ver más</button></a>
-          </div>
+          <form class="" action="{{url('detalle-prod')}}/{{$producto->id}}" method="get">
+
+
+              <button id="button-agregar" type="submit" class="button btn btn-outline-primary">Ver más</button>
+
+          </form>
 
       </div>
     @endforeach

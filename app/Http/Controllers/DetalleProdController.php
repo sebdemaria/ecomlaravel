@@ -6,11 +6,11 @@ use App\Producto;
 
 class DetalleProdController extends Controller
 {
-  public function actualizarEstado(Request $data)
+  public function actualizarEstado(Request $data,$id)
   {
-
+    $producto = Producto::find($id);
     $total = $data['cantidad'] * 10;
-    return view('detalle-prod', compact('total'));
+    return view('detalle-prod', compact('producto','total'));
 
   }
 }
