@@ -17,7 +17,7 @@
 
         <!-- Imagen del producto -->
         <p>
-          <img src="/storage/samsung-a50.png" alt="foto-producto">
+          <img src="/storage/iphone-11.png" alt="foto-producto">
         </p>
 
         <!-- Nombre del producto -->
