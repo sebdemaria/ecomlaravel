@@ -39,3 +39,8 @@ Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
 //Home
 //Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/carrito', 'CarritoController@listar');
+Route::post('/carrito','CarritoController@agregar');
+Route::post('/borrarProducto','CarritoController@borrarProducto');
+Route::post('/modificarCantidad','CarritoController@modificarCantidad');

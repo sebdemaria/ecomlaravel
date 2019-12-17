@@ -14,29 +14,37 @@
 
   <div class="lista-prod">
     <ul>
+        @foreach( $carritos as $producto):
       <li>
-
         <div class="imagen">
           <img src="img/samsung-a50.png" alt="samsung a50">
         </div>
 
         <div class="descrip-prod">
-          <h3><strong>Samsung A50 64GB 2019</strong></h3>
-          <p class="descripcion">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <h3><strong>{{$producto->nombre}}</strong></h3>
 
-          <div class="button">
-            <button id="button-quitar" type="button-compra" class="btn btn-primary">Quitar</button>
-          </div>
-
-          <div class="button">
-            <button id="agregar" type="button-compra" class="btn btn-success">-   1   +</button>
-          </div>
+            <form action="/borrarProducto" method="post">
+                @csrf
+                <input type="hidden" name="idProducto" value="{{$producto->id}}">
+                <div class="button">
+                <button id="button-quitar" type="submit" class="btn btn-primary">Quitar</button>
+              </div>
+            </form>
+            <form action="/modificarCantidad" method="post">
+                @csrf
+                <input type="hidden" name="idProducto" value="{{$producto->id}}">
+                <label for="cantidad">Cantidad</label>
+                <input type="text" name="cantidad" value="{{$producto->pivot->cantidad}}" class="form-control">
+              <div class="button">
+                <button id="agregar" type="submit" class="btn btn-success">Actualizar Cantidad</button>
+              </div>
+            </form>
         </div>
 
       </li>
+@endforeach
     </ul>
+
     <p class="total">
       Subtotal $10.500
       <br>
