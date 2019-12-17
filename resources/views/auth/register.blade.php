@@ -14,85 +14,64 @@
       @csrf
 
       <!-- Nombre -->
-      <div class="datos">
+      <div id="nom" class="datos">
         <p>
           <input id= "nombre" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Nombre">
-        </p>
-        <p>
-
         </p>
       </div>
 
       <!-- Apellido -->
-      <div class="datos">
+      <div id="ap" class="datos">
         <p>
           <input id="apellido" type="text" name="apellido" value="{{old('apellido')}}" placeholder="Apellido">
-        </p>
-        <p>
-
         </p>
       </div>
 
       <!-- Username -->
-      <div class="datos">
+      <div id="user" class="datos">
         <p>
           <input id="username" type="text" name="username" value="{{old('username')}}" placeholder="Usuario">
-        </p>
-        <p>
-
         </p>
       </div>
 
       <!-- E-mail -->
-      <div class="datos">
+      <div id="mail" class="datos">
         <p>
           <input id="email" type="text" name="email" value="{{old('email')}}" placeholder="Email">
-        </p>
-        <p>
-
         </p>
       </div>
 
       <!-- Password -->
-      <div class="datos">
+      <div id="pass" class="datos">
         <p>
           <input id="password" type="password" name="password" value="" placeholder="Contraseña">
-        </p>
-        <p>
-
         </p>
       </div>
 
       <!-- Confirmar contraseña -->
-      <div class="datos">
+      <div id="passConf" class="datos">
         <p>
           <input id="password_confirmation" type="password" name="password_confirmation" value="" placeholder="Repita su contraseña">
         </p>
       </div>
 
       <!-- Fecha de nacimiento -->
-      <div class="datos">
+      <div id="nac" class="datos">
         <p>
           Fecha de nacimiento
         </p>
         <p>
           <input class="campos" id="fecha" type="date" name="fecha" value="{{old('fecha')}}" placeholder="Fecha de nacimiento" >
         </p>
-        <p>
-
-        </p>
       </div>
 
       <!-- Avatar -->
-      <div class="datos">
+      <div id="av" class="datos">
         <p class="parrafoAvatar">
           <label for="avatar">Elige tu avatar</label>
         </p>
         <p>
           <input class="avatar" type="file" id="avatar" name="avatar" value="">
-        </p>
-        <p>
-
         </p>
       </div>
 
@@ -116,5 +95,7 @@
       </div>
     </form>
   </div>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="/js/register_scripts.js"></script>-->
+    <script src="/js/register_scripts.js"></script>
 @endsection
