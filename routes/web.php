@@ -43,14 +43,10 @@ Route::get('/noAuth', function () {
     return view("noAuth");
 });
 
-<<<<<<< HEAD
 Route::get('/upload', 'UploadController@return');
 Route::post('/upload', 'UploadController@upload');
 
-=======
 //Login / Register
->>>>>>> 6e55955f04da011ecd4304f3d8924be7cf74c3dc
 Auth::routes();
 //Logout
 Route::get('/logout', 'Auth\LoginController@logout');
-Route::post('/login','LoginController@validar');
