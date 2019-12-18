@@ -10,16 +10,16 @@
 @section('main')
   <div class="container">
     <h1>¡Hola! <br> Por favor ingresá tu usuario y contraseña</h1>
-    <form action="login" method="POST">
+    <form class="formulario" action="login" method="POST" >
       @csrf
 
       <!-- E-mail -->
-      <div class="datos">
+      <div id="mail" class="datos">
         <input class="campos" id="formSup" placeholder="E-mail" name="email" type="text" value="">
       </div>
 
       <!-- Password -->
-      <div class="datos">
+      <div id="pass" class="datos">
         <input class="campos" placeholder="Password" name="password" type="password" value="">
       </div>
 
@@ -46,4 +46,5 @@
     </form>
   </div>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="/js/login_scripts.js"></script>
 @endsection

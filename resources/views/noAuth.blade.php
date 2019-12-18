@@ -1,4 +1,3 @@
-
 <!-- HEAD -->
 <head>
   <!-- Configuraciones -->
@@ -19,5 +18,5 @@
 
 <main>
   <img src="/img/Biser logo transparent 2.png" alt="Biser logo">
-<h1>¡Lo sentimos! Debes aceptar el uso de cookies para continuar navegando por el sitio.</h1>
+  <h1>¡Lo sentimos! Debes aceptar el uso de cookies para continuar navegando por el sitio.</h1>
 </main>
