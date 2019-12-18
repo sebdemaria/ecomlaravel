@@ -24,7 +24,6 @@ class PerfilController extends Controller
   //Actualizo la tabla
   public function actualizar(Request $data)
   {
-
     $this->validate($data, [
       'telefono' => ['integer', 'min:10'],
       'direccion'=> ['string', 'max:255'],
@@ -42,6 +41,4 @@ class PerfilController extends Controller
     return view('perfil',compact('usuario'));
   }
 }
-
-
 ?>

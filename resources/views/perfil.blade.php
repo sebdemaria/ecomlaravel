@@ -18,7 +18,7 @@
       </p>
     </div>
 
-    <form class="datos" action="" method="POST">
+    <form class="formulario" action="" method="POST">
       @csrf
 
       <!--Username-->
@@ -36,36 +36,23 @@
       </div>
 
       <!--Teléfono-->
-      <div class="datos">
+      <div id="tel" class="datos">
         <p>
           <input id="telefono" type="text" name="telefono" value="{{$usuario->telefono}}" placeholder="Teléfono" >
-        </p>
-        <p>
-          @error('telefono')
-            <span class="invalid-feedback" role="alert">
-              <strong>Número de teléfono no válido.</strong>
-            </span>
-          @enderror
         </p>
       </div>
 
       <!--Dirección-->
-      <div class="datos">
+      <div id="dir" class="datos">
         <p>
           <input id="direccion" type="text" name="direccion" value="{{$usuario->direccion}}" placeholder="Ingrese su direccion" >
-        </p>
-        <p>
-          Aca iria un error de tipeo
         </p>
       </div>
 
       <!--Localidad-->
-      <div class="datos">
+      <div id="loc" class="datos">
         <p>
           <input id="localidad" type="text" name="localidad" value="{{$usuario->localidad}}" placeholder="Ingrese la localidad" >
-        </p>
-        <p>
-          Aca iria un error de tipeo
         </p>
       </div>
 
@@ -114,4 +101,6 @@
       </div>
     </form>
   </div>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="/js/perfil_scripts.js"></script>
 @endsection

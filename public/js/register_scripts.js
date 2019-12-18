@@ -37,78 +37,90 @@ window.onload = function() {
 
   formulario.onsubmit = function(event) {
     for(var elemento of formulario.elements) {
-        console.log('Validamos Elementos del formulario');
-        console.log(elemento.name);
-        console.log('Trim/Regex : ' + regexNombre.test(elemento.value.trim()));
 
       //Nombre
       if (elemento.name == 'nombre') {
         if (elemento.value.trim() == '' ||  !regexNombre.test(elemento.value.trim())) {
-          event.preventDefault();
-          errorNombre = document.createTextNode("Ingresa un nombre valido");
-          //mensajeNombre.innerText = '';
+          mensajeNombre.innerHTML = '';
+          errorNombre = document.createTextNode("Ingresa un nombre valido.");
           mensajeNombre.append(errorNombre);
           nombre.append(mensajeNombre);
+          event.preventDefault();
+        } else {
+          mensajeNombre.innerHTML = '';
         }
       }
+      console.log(nombre);
       //Apellido
       if (elemento.name == 'apellido') {
         if (elemento.value.trim() == '' || !regexNombre.test(elemento.value.trim())) {
-          event.preventDefault();
+          mensajeApellido.innerHTML = '';
           errorApellido = document.createTextNode("Ingresa un apellido valido.");
-          //mensajeApellido.innerText = '';
           mensajeApellido.append(errorApellido);
           apellido.append(mensajeApellido);
+          event.preventDefault();
+        } else {
+          mensajeApellido.innerHTML = '';
         }
       }
       //Username
       if (elemento.name == 'username') {
         if (elemento.value.trim() == '') {
-          event.preventDefault();
+          mensajeUsername.innerHTML = '';
           errorUsername = document.createTextNode("Ingresa tu nombre de usuario.");
-          //mensajeUsername.innerText = '';
           mensajeUsername.append(errorUsername);
           username.append(mensajeUsername);
+          event.preventDefault();
+        } else {
+          mensajeUsername.innerHTML = '';
         }
       }
       //Email
       if (elemento.name == 'email') {
         if (elemento.value.trim() == '' || !regexEmail.test(elemento.value.trim())) {
-          event.preventDefault();
+          mensajeEmail.innerHTML = '';
           errorEmail = document.createTextNode("Ingresa tu e-mail.");
-          //mensajeEmail.innerText = '';
           mensajeEmail.append(errorEmail);
           email.append(mensajeEmail);
+          event.preventDefault();
+        } else {
+          mensajeEmail.innerHTML = '';
         }
       }
       //Password
       if (elemento.name == 'password') {
         if (elemento.value.trim() == '' || !regexPass.test(elemento.value.trim())) {
-          event.preventDefault();
+          mensajePassword.innerHTML = '';
           errorPassword = document.createTextNode("Ingresa una contraseña valida.");
-          //mensajePassword.innerText = '';
           mensajePassword.append(errorPassword);
           password.append(mensajePassword);
+          event.preventDefault();
+        } else {
+          mensajePassword.innerHTML = '';
         }
       }
       //Password Confirmation
       if (elemento.name == 'password_confirmation') {
         if (elemento.value.trim() == '') {
-          event.preventDefault();
+          mensajePasswordConf.innerHTML = '';
           errorPasswordConf = document.createTextNode("Ingresa una contraseña valida.");
-          //mensajePasswordConf.innerText = '';
           mensajePasswordConf.append(errorPasswordConf);
           passwordConf.append(mensajePasswordConf);
+          event.preventDefault();
+        } else {
+          mensajePasswordConf.innerHTML = '';
         }
       }
       //Fecha
       if (elemento.name == 'fecha') {
         if (elemento.value.trim() == '') {
-          event.preventDefault();
+          mensajeFecha.innerHTML = '';
           errorFecha = document.createTextNode("Ingresa tu fecha de nacimiento.");
-          //mensajeFecha.innerText = '';
           mensajeFecha.append(errorFecha);
           fecha.append(mensajeFecha);
+          event.preventDefault();
+        } else {
+          mensajeFecha.innerHTML = '';
         }
       }
     }

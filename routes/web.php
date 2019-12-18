@@ -25,9 +25,10 @@ Route::get('/productos', 'ProductosController@listar');
 Route::get('/detalle-prod/{id}', 'DetalleProdController@actualizarEstado');
 
 //Carrito
-Route::get('/carrito', function () {
-    return view("carrito");
-});
+Route::get('/carrito', 'CarritoController@listar');
+Route::post('/carrito','CarritoController@agregar');
+Route::post('/borrarProducto','CarritoController@borrarProducto');
+Route::post('/modificarCantidad','CarritoController@modificarCantidad');
 
 //Checkout
 Route::get('/checkout', function () {
@@ -38,13 +39,8 @@ Route::get('/noAuth', function () {
     return view("noAuth");
 });
 
+//Login / Register
 Auth::routes();
 //Logout
 Route::get('/logout', 'Auth\LoginController@logout');
-//Home
-//Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/carrito', 'CarritoController@listar');
-Route::post('/carrito','CarritoController@agregar');
-Route::post('/borrarProducto','CarritoController@borrarProducto');
-Route::post('/modificarCantidad','CarritoController@modificarCantidad');
+Route::post('/login','LoginController@validar');
