@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/favicon.ico">
+    <link href="/css/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     @yield('headerConfigs')
   </head>
 
@@ -46,7 +47,12 @@
       <!-- Hamburguesa -->
       <div class="hamb">
         <label for="hamb">
-          <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
+        {{-- <button id="hamburger" class="hamburger hamburger--spin is-active" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button> --}}
         </label>
 
         <input type="checkbox" id="hamb">

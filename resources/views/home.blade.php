@@ -7,6 +7,12 @@
 @endsection
 
 <!-- MAIN -->
+<script>
+var resultado = null;
+  var mensaje = "Nuestro sitio utiliza cookies. ¿Estás de acuerdo con el uso de las mismas?";
+  var resultado = confirm(mensaje);
+
+</script>
 @section('main')
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -78,7 +84,7 @@
   </section>
 
   <div class="photo-container">
-    <img class="dia-madre" src="/img/banner-reyes.jpg" alt="Dia de la madre">
+    <img class="dia-madre" src="/img/banner-xmas.jpg" alt="Dia de la madre">
     <img class="fifty-off" src="/img/50-off.png" alt="">
   </div>
 
@@ -93,7 +99,7 @@
           <p>
             3 cuotas sin interés de $3.499,99
           </p>
-          <a id="ver-mas" href="detalle-prod" class="btn btn-primary">Ver Más</a>
+          <a id="ver-mas" href="productos" class="btn btn-primary">Ver Más</a>
         </div>
       </li>
       <li>

@@ -34,6 +34,10 @@ Route::get('/checkout', function () {
     return view("checkout");
 });
 
+Route::get('/noAuth', function () {
+    return view("noAuth");
+});
+
 Auth::routes();
 //Logout
 Route::get('/logout', 'Auth\LoginController@logout');

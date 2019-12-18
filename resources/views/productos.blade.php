@@ -22,18 +22,18 @@
 
         <!-- Nombre del producto -->
         <p>
-          Nombre: {{$producto->nombre}}
+          {{$producto->nombre}}
         </p>
 
 
         <!-- Marca del producto -->
         <p>
-          Marca: {{$producto->marca}}
+          {{$producto->marca}}
         </p>
 
         <!-- Precio del producto -->
         <p>
-          Precio: ${{$producto->precio}}
+          ${{$producto->precio}}
         </p>
           <!--Ver más -->
           <form class="" action="{{url('detalle-prod')}}/{{$producto->id}}" method="get">
