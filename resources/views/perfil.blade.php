@@ -2,7 +2,7 @@
 
 <!-- HEAD -->
 @section('headerConfigs')
-  <title>Mi cuenta</title>
+  <title>Biser - Mi cuenta</title>
   <link rel="stylesheet" href="/css/perfil.css">
 @endsection
 

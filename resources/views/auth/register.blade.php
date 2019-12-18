@@ -2,7 +2,7 @@
 
 <!-- HEAD -->
 @section('headerConfigs')
-  <title>Registro</title>
+  <title>Biser - Registrate</title>
   <link rel="stylesheet" href="/css/registro.css">
 @endsection
 
@@ -95,7 +95,7 @@
       </div>
     </form>
   </div>
-    <!--<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="/js/register_scripts.js"></script>-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--<script src="/js/register_scripts.js"></script>-->
     <script src="/js/register_scripts.js"></script>
 @endsection

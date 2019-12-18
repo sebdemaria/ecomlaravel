@@ -2,7 +2,7 @@
 
 <!-- HEAD -->
 @section('headerConfigs')
-  <title>Home</title>
+  <title>Biser - Home</title>
   <link rel="stylesheet" href="/css/home.css">
 @endsection
 
@@ -84,8 +84,8 @@ var resultado = null;
   </section>
 
   <div class="photo-container">
-    <img class="dia-madre" src="/img/banner-xmas.jpg" alt="Dia de la madre">
-    <img class="fifty-off" src="/img/50-off.png" alt="">
+    <a href="xmas"><img class="dia-madre" src="/img/banner-xmas.jpg" alt="Dia de la madre">
+    <img class="fifty-off" src="/img/50-off.png" alt=""></a>
   </div>
 
   <div class="lista-prod">
