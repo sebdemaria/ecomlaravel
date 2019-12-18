@@ -8,6 +8,8 @@ $factory->define(Producto::class, function (Faker $faker) {
     "marca"=> $faker->sentence(1),
     "precio"=> $faker->numberBetween(200,1000),
     "color"=> $faker->sentence(1),
-    "stock"=> $faker->numberBetween(100,300)
+    "stock"=> $faker->numberBetween(100,300),
+    "descripcion"=> $faker->sentence(5)
   ];
 });
+?>
