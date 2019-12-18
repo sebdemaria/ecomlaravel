@@ -1,11 +1,26 @@
 main{
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 83%;
+}
+
+.container-fluid{
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   width: 100%;
   text-align: center;
-  padding: 25px;
+  height: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 form{
@@ -71,5 +86,15 @@ div .datos{
 @media (min-width: 768px) {
   footer{
     position: absolute;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 98.5%;
   }
 }

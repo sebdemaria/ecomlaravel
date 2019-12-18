@@ -95,12 +95,9 @@
       </div>
     </form>
   </div>
-<<<<<<< HEAD
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!--<script src="/js/register_scripts.js"></script>-->
     <script src="/js/register_scripts.js"></script>
-=======
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="/js/register_scripts.js"></script>
->>>>>>> 6e55955f04da011ecd4304f3d8924be7cf74c3dc
 @endsection
