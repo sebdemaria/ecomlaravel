@@ -2,7 +2,7 @@
 
 <!-- HEAD -->
 @section('headerConfigs')
-  <title>Login</title>
+  <title>Biser - Login</title>
   <link rel="stylesheet" href="/css/login.css">
 @endsection
 

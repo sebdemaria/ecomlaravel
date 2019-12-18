@@ -2,7 +2,7 @@
 
 <!-- HEAD -->
 @section('headerConfigs')
-  <title>Contacto</title>
+  <title>Biser - Contacto</title>
   <link rel="stylesheet" href="/css/contacto.css">
 @endsection
 

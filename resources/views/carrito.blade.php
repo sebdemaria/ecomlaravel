@@ -2,7 +2,7 @@
 
 <!-- HEAD -->
 @section('headerConfigs')
-  <title>Carrito</title>
+  <title>Biser - Mi Carrito</title>
   <link rel="stylesheet" href="/css/carrito.css">
 @endsection
 

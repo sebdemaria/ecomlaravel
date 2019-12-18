@@ -21,6 +21,9 @@ Route::get('/contacto', function () {
 //Productos
 Route::get('/productos', 'ProductosController@listar');
 
+//ProductosXmas
+Route::get('/xmas', 'XmasProductosController@listar');
+
 //Detalle producto
 Route::get('/detalle-prod/{id}', 'DetalleProdController@actualizarEstado');
 
@@ -35,12 +38,15 @@ Route::get('/checkout', function () {
     return view("checkout");
 });
 
+//No Auth If No Cookies
 Route::get('/noAuth', function () {
     return view("noAuth");
 });
+
+Route::get('/upload', 'UploadController@return');
+Route::post('/upload', 'UploadController@upload');
 
 //Login / Register
 Auth::routes();
 //Logout
 Route::get('/logout', 'Auth\LoginController@logout');
-Route::post('/login','LoginController@validar');

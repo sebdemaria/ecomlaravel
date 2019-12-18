@@ -3,12 +3,13 @@
 <!-- HEAD -->
 @section('headerConfigs')
   <title>Biser - Listado de productos</title>
-  <link rel="stylesheet" href="/css/productos.css">
+  <link rel="stylesheet" href="/css/xmas.css">
 @endsection
 
 <!-- MAIN -->
 @section('main')
   <div class="caja-principal">
+    <img class="xmas" src="/img/banner-xmas.jpg" alt="xmas disscount">
     <div class="paginacion">
       {{$productos->links()}}
     </div>
@@ -56,16 +57,19 @@
         <p>
           ${{$producto->precio}}
         </p>
+          <!--Ver más -->
+          <form class="" action="{{url('detalle-prod')}}/{{$producto->id}}" method="get">
 
-        <!--Ver más -->
-        <form class="" action="{{url('detalle-prod')}}/{{$producto->id}}" method="get">
-          <button id="button-agregar" type="submit" class="button btn btn-outline-primary">Ver más</button>
-        </form>
+
+              <button id="button-agregar" type="submit" class="button btn btn-outline-primary">Ver más</button>
+
+          </form>
+
       </div>
     @endforeach
   </div>
   <div class="paginacion">
     {{$productos->links()}}
   </div>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 @endsection
