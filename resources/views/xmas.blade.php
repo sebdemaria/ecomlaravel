@@ -8,11 +8,12 @@
 
 <!-- MAIN -->
 @section('main')
+  <img class="xmas" src="/img/xmas-deco.png" alt="xmas disscount">
+  
   <div class="caja-principal">
-    <img class="xmas" src="/img/banner-xmas.jpg" alt="xmas disscount">
-    <div class="paginacion">
+    {{-- <div class="paginacion">
       {{$productos->links()}}
-    </div>
+    </div> --}}
     @foreach ($productos as $producto)
       <div class="productos">
 
