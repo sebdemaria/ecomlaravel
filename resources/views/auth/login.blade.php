@@ -15,16 +15,23 @@
 
       <!-- E-mail -->
       <div id="mail" class="datos">
-        <input class="campos" id="formSup" placeholder="E-mail" name="email" type="text" value="">
+        <input class="campos" id="formSup" placeholder="E-mail" name="email" type="text" value="{{old('email')}}">
+        <p>
+          @if ($errors->get('email'))
+            Los datos ingresados no son validos.
+          @endif
+        </p>
       </div>
 
       <!-- Password -->
       <div id="pass" class="datos">
         <input class="campos" placeholder="Password" name="password" type="password" value="">
+        <p>
+          @if ($errors->get('password'))
+            Ingrese una contraseña.
+          @endif
+        </p>
       </div>
-
-      <p>
-      </p>
 
       <!-- Recuperar contraseña -->
       @if (Route::has('password.request'))

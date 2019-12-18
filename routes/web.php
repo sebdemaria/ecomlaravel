@@ -44,7 +44,7 @@ Route::get('/noAuth', function () {
 });
 
 Route::get('/upload', 'UploadController@return');
-Route::post('/upload', 'UploadController@upload');
+Route::post('/upload', 'UploadController@return');
 
 //Login / Register
 Auth::routes();

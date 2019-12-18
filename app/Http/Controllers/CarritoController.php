@@ -6,6 +6,10 @@ use App\Carrito;
 
 class CarritoController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth');
+  }
     public function listar(){
         if(Auth::check()){
             $carritos = Auth::user()->productos()->get();

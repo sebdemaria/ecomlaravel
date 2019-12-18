@@ -3,14 +3,14 @@
 <!-- HEAD -->
 @section('headerConfigs')
   <title>Biser - Registrate</title>
-  <link rel="stylesheet" href="/css/registro.css">
+  <link rel="stylesheet" href="/css/upload.css">
 @endsection
 
 <!-- MAIN -->
 @section('main')
   <div class="cajaPrincipal">
     <h1>¿Listo para vender?</h1>
-    <form class="formulario" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+    <form class="formulario" method="POST" action="upload" enctype="multipart/form-data">
       @csrf
 
       <!-- Imagenes -->
@@ -47,7 +47,7 @@
       <!-- Descripcion de prod -->
       <div id="descrip" class="datos">
         <p>
-          <textarea id= "descrip" name="descrip" rows="80" cols="800"> </textarea>
+          <textarea id= "descrip" name="descrip" rows="20" cols="100"> </textarea>
         </p>
       </div>
 
@@ -56,7 +56,7 @@
         <p>
           <div class="button">
             <button id="button-cuenta" type="submit" class="btn btn-primary">
-              Crear cuenta
+              Subir producto
             </button>
           </div>
         </p>

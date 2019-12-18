@@ -32,12 +32,22 @@
         <p>
           <input id="username" type="text" name="username" value="{{old('username')}}" placeholder="Usuario">
         </p>
+        <p>
+          @if ($errors->get('username'))
+            El usuario ya esta registrado.
+          @endif
+        </p>
       </div>
 
       <!-- E-mail -->
       <div id="mail" class="datos">
         <p>
           <input id="email" type="text" name="email" value="{{old('email')}}" placeholder="Email">
+        </p>
+        <p>
+          @if ($errors->get('email'))
+            El email ya esta registrado.
+          @endif
         </p>
       </div>
 
@@ -95,12 +105,6 @@
       </div>
     </form>
   </div>
-<<<<<<< HEAD
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <!--<script src="/js/register_scripts.js"></script>-->
-    <script src="/js/register_scripts.js"></script>
-=======
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="/js/register_scripts.js"></script>
->>>>>>> 6e55955f04da011ecd4304f3d8924be7cf74c3dc
 @endsection
