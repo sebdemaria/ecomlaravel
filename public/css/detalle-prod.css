@@ -9,11 +9,13 @@
 .container {
   margin-top: 80px;
   width: 100%;
+  justify-content: center;
+  display: flex;
 }
 
 div .imagen{
   display: inline-flex;
-  width: 100%;
+  width: 80%;
   justify-content: center;
 }
 
@@ -30,12 +32,34 @@ img{
   background-color: white;
   border-radius: 2%;
   border: solid 1px lightgrey;
-  padding: 10px 10px;
+  padding: 15px;
   margin-bottom: 15px;
 }
 
+h3{
+  text-align: center;
+}
+
 .caracts{
-  font-size: 15px;
+  font-size: 13px;
+  text-align: center;
+}
+
+select{
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label{
+  width: 28%;
+  margin: 9px 0;
+}
+
+#cantidad{
+  margin: 5px 0;
+  width: 20%;
+  text-align: center;
 }
 
 .botones{
@@ -46,7 +70,8 @@ img{
 }
 
 div .button{
-  width: 40%;
+  display: inline-flex;
+  width: 49%;
   border: 50px;
 }
 
@@ -65,43 +90,52 @@ div .button{
 @media (min-width: 768px){
   div .imagen{
     display: inline-flex;
-    width: 100%;
+    width: 40%;
     justify-content: center;
  }
 
  img{
    width: 40%;
+ }
 
+ select{
+   width: 20%;
+ }
+
+ label{
+   width: 10%;
+ }
+
+ #cantidad{
+   margin-right: 31%;
+   width: 10%;
  }
 
   div .button{
-    width: 48%;
-  }
-
-  #button-compra{
-    width: 50%;
-    float: right;
-  }
-
-  #button-agregar{
-    width: 50%;
+    width: 49%;
   }
 }
 
 @media (min-width: 1024px){
+  div .imagen{
+    width: 30%;
+ }
 
   img{
     width: 30%;
     margin-bottom: 25px;
   }
 
-  #button-compra{
-    width: 50%;
-    float: right;
+  select{
+    width: 10%;
   }
 
-  #button-agregar{
-    width: 50%;
+  label{
+    width: 8%;
   }
 
+  #cantidad{
+    margin-right: 35%;
+    width: 8%;
+  }
 }

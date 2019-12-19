@@ -18,6 +18,14 @@
       </p>
     </div>
 
+    <div class="upload">
+      <p>
+        <div class="button">
+          <button id="button-cuenta" type="submit" class="btn btn-primary">Subir Nuevo Producto</button>
+        </div>
+      </p>
+    </div>
+
     <form class="formulario" action="" method="POST">
       @csrf
 
@@ -59,10 +67,10 @@
       <!--Provincia-->
       <div class="datos">
         <p id="parrafo-prov">
-          <label for="provincias">
-            Provincia: Aca iria un value
+          <label class="provincia" for="provincias">
+            Provincia
           </label>
-          <select class="" name="provincia" id="provincias">
+          <select name="provincia" id="provincias">
             <script type="text/javascript">
               /*Se pide un Json a una API, se lo convierte y adapta al sitio*/
               function getProvincias() {

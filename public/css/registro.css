@@ -65,7 +65,7 @@ p{
   justify-content: space-evenly;
   display: inline-flex;
   align-items: center;
-  width: 78%;
+  width: 63%;
 }
 
 #terminos{
@@ -138,5 +138,9 @@ div .declaro{
 
   main div .crearcuenta{
     float: left;
+  }
+
+  footer{
+    position: absolute;
   }
 }

@@ -89,7 +89,7 @@
       <div class="terminos">
         <input type="checkbox" name="terminos" value="" id="terminos">
         <label class="declaro" for="terminos">
-          Declaro que he leído y acepto la nueva Política de Privacidad y los Términos y Condiciones.
+          Declaro que he leído y acepto la nueva <a href='https://www.mercadolibre.com/org-img/eventuales/MEC/safe/mainpqpriva.html'>Política de Privacidad y los Términos y Condiciones.</a>
         </label>
       </div>
 
@@ -105,12 +105,10 @@
       </div>
     </form>
   </div>
-<<<<<<< HEAD
-=======
+
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!--<script src="/js/register_scripts.js"></script>-->
     <script src="/js/register_scripts.js"></script>
->>>>>>> 836aa4ef4a69cf499f70ccd3e78b476b1315176e
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="/js/register_scripts.js"></script>
 @endsection

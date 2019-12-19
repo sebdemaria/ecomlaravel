@@ -51,7 +51,6 @@
           <form class="cantidad" action="{{url('carrito')}}" method="post">
               @csrf
               <input type="hidden" name="idProducto" value="{{$producto->id}}">
-                  <label for="colores">Color</label>
                   <select name="colores" placeholder="{{old('colores')}}">
                       <option value="negro">Negro</option>
                       <option value="rojo">Rojo</option>
@@ -59,6 +58,9 @@
                   </select>
               <label for="cantidad">Cantidad</label>
               <input type="text" id="cantidad" name="cantidad" value="1" placeholder="{{old('cantidad')}}">
+              <div class="button">
+                  <button id="button-agregar" type="submit" class="btn btn-primary">Comprar</button>
+              </div>
               <div class="button">
                   <button id="button-agregar" type="submit" class="btn btn-outline-primary">Agregar al carrito</button>
               </div>

@@ -17,12 +17,18 @@ h1{
   padding-top: 20px;
 }
 
+.upload{
+  width: 100%;
+  text-align: center;
+}
+
 .cajaPrincipal{
  width: 100%;
  display: inline-flex;
  width: 100%;
  flex-wrap: wrap;
  justify-content: center;
+ margin-bottom: 15px;
 }
 
 .bienvenida{
@@ -96,7 +102,7 @@ select{
   width: 70%;
 }
 
-label{
+.provincia{
   width: 100%;
 }
 
@@ -104,6 +110,8 @@ label{
   .datos{
       text-align: center;
       width: 50%;
+      height: 25%;
+      align-content: space-around;
   }
 
   select{
@@ -157,5 +165,4 @@ label{
   select{
     width: 40%;
   }
-
 }

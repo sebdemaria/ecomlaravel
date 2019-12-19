@@ -10,6 +10,10 @@ main{
   margin: 0;
 }
 
+p{
+  margin-bottom: 0!important;
+}
+
 .container {
   width: 100%;
   text-align: center;
