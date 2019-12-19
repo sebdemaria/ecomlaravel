@@ -17,6 +17,7 @@ class CreoTablaProductos extends Migration
       $table->string('color');
       $table->integer('stock');
       $table->string('descripcion');
+      $table->string('avatar');
       $table->rememberToken();
       $table->timestamps();
     });

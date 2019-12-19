@@ -60,7 +60,7 @@
       <div class="datos">
         <p id="parrafo-prov">
           <label for="provincias">
-            Provincia: Aca iria un value
+            Provincia:
           </label>
           <select class="" name="provincia" id="provincias">
             <script type="text/javascript">
