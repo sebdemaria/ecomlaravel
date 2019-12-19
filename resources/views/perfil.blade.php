@@ -18,14 +18,6 @@
       </p>
     </div>
 
-    <div class="upload">
-      <p>
-        <div class="button">
-          <button id="button-cuenta" type="submit" class="btn btn-primary">Subir Nuevo Producto</button>
-        </div>
-      </p>
-    </div>
-
     <form class="formulario" action="" method="POST">
       @csrf
 
@@ -67,40 +59,31 @@
       <!--Provincia-->
       <div class="datos">
         <p id="parrafo-prov">
-<<<<<<< HEAD
-          <label class="provincia" for="provincias">
-            Provincia
-=======
           <label for="provincias">
             Provincia:
->>>>>>> c462aa4f99da4c772a445501a452025000cc22ae
           </label>
-          <select name="provincia" id="provincias">
+          <select class="" name="provincia" id="provincias">
             <script type="text/javascript">
-              /*Se pide un Json a una API, se lo convierte y adapta al sitio*/
               function getProvincias() {
                 fetch('https://apis.datos.gob.ar/georef/api/provincias')
-                .then(function(response) {
+                //Se pide un Json a la API, lo convierte y lo adapta al sitio
+                .then(function(response)
+                {
                   return response.json();
                 })
-                .then(function(myJson) {
-                  for(let i = 0; i<myJson['provincias'].length;i++) {
+                .then(function(data)
+                {
+                  for(let i = 0; i<data['provincias'].length;i++) {
                     let provincias = document.querySelector("#provincias");
                     let option = document.createElement('option');
-                    option.text = myJson['provincias'][i].nombre;
+                    option.text = data['provincias'][i].nombre;
                     option.value = option.text;
                     provincias.appendChild(option);
                   }
                 });
               }
-
-              window.onload = function() {
-                getProvincias()
-              }
             </script>
           </select>
-        </p>
-        <p>
         </p>
       </div>
 

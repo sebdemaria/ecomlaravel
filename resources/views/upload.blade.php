@@ -10,10 +10,11 @@
 @section('main')
   <div class="cajaPrincipal">
     <h1>¿Listo para vender?</h1>
+    <img src="/storage/admin" alt="">
 
     <form class="formulario" method="POST" action="/upload" enctype="multipart/form-data">
       @csrf
-      
+
       <!-- Imagenes -->
       <div id="av" class="datos">
         <p class="parrafoAvatar">
