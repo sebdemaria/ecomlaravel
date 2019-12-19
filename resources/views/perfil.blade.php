@@ -67,8 +67,13 @@
       <!--Provincia-->
       <div class="datos">
         <p id="parrafo-prov">
+<<<<<<< HEAD
           <label class="provincia" for="provincias">
             Provincia
+=======
+          <label for="provincias">
+            Provincia:
+>>>>>>> c462aa4f99da4c772a445501a452025000cc22ae
           </label>
           <select name="provincia" id="provincias">
             <script type="text/javascript">

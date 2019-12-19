@@ -5,8 +5,8 @@ Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
 
 //Perfil
-Route::get('/perfil', 'PerfilController@listar');
-Route::post('/perfil', 'PerfilController@actualizar');
+Route::get('/perfil', 'PerfilController@listar')->middleware('isAdmin');
+Route::post('/perfil', 'PerfilController@actualizar')->middleware('isAdmin');
 
 //FAQ
 Route::get('/faq', function () {
@@ -43,8 +43,9 @@ Route::get('/noAuth', function () {
     return view("noAuth");
 });
 
-Route::get('/upload', 'UploadController@return');
-Route::post('/upload', 'UploadController@return');
+//Cargar producto
+Route::get('/upload', 'UploadController@vista');
+Route::post('/upload', 'UploadController@agregarProducto');
 
 //Login / Register
 Auth::routes();

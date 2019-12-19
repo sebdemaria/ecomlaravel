@@ -10,44 +10,59 @@
 @section('main')
   <div class="cajaPrincipal">
     <h1>¿Listo para vender?</h1>
-    <form class="formulario" method="POST" action="upload" enctype="multipart/form-data">
-      @csrf
 
+    <form class="formulario" method="POST" action="/upload" enctype="multipart/form-data">
+      @csrf
+      
       <!-- Imagenes -->
       <div id="av" class="datos">
         <p class="parrafoAvatar">
           <label for="avatar">Elige tu avatar</label>
         </p>
         <p>
-          <input class="avatar" type="file" id="avatar" name="imagenes" value="">
+          <input class="avatar" type="file" id="avatar" name="avatar" value="">
         </p>
       </div>
 
-      <!-- Nombre del producto -->
-      <div id="nom" class="datos">
+      <!-- Nombre -->
+      <div id="nombre" class="datos">
         <p>
-          <input id= "nombre" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Nombre del producto">
+          <input id="nom" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Nombre del producto">
         </p>
       </div>
 
-      <!-- Categoria -->
-      <div id="ap" class="datos">
+      <!-- Marca -->
+      <div id="marca" class="datos">
         <p>
-          <input id="apellido" type="text" name="categoria" value="{{old('categoria')}}" placeholder="Categoria">
+          <input id="marc" type="text" name="marca" value="{{old('marca')}}" placeholder="Marca">
         </p>
       </div>
 
       <!-- Precio -->
-      <div id="user" class="datos">
+      <div id="precio" class="datos">
         <p>
-          <input id="username" type="text" name="precio" value="{{old('precio')}}" placeholder="Precio">
+          <input id="pre" type="text" name="precio" value="{{old('precio')}}" placeholder="Precio">
         </p>
       </div>
 
-      <!-- Descripcion de prod -->
-      <div id="descrip" class="datos">
+      <!-- Color -->
+      <div id="color" class="datos">
         <p>
-          <textarea id= "descrip" name="descrip" rows="20" cols="100"> </textarea>
+          <input id="col" type="text" name="color" value="{{old('color')}}" placeholder="Color">
+        </p>
+      </div>
+
+      <!-- Stock -->
+      <div id="stock" class="datos">
+        <p>
+          <input id="sto" type="text" name="stock" value="{{old('stock')}}" placeholder="Stock">
+        </p>
+      </div>
+
+      <!-- Descripcion -->
+      <div id="descripcion" class="datos">
+        <p>
+          <textarea id= "descrip" name="descripcion" rows="20" cols="100"> </textarea>
         </p>
       </div>
 
