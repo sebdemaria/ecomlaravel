@@ -37,6 +37,10 @@ p{
   font-size: 15px;
 }
 
+#descrip{
+  width: 80%;
+}
+
 .subirProducto{
   width: 100%;
   text-align: center;
@@ -49,6 +53,10 @@ p{
     width: 40%;
     margin-top: 2px;
     margin-bottom: 20px;
+  }
+
+  #descrip{
+    width: 100%;
   }
 }
 
