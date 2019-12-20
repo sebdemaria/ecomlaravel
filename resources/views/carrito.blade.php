@@ -51,7 +51,7 @@
         @endphp
 
       @endforeach
-      <p>
+      <p class="suma">
         Total: {{$total}}
       </p>
     </ul>
