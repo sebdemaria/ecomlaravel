@@ -46,6 +46,7 @@ div .imagen{
 
 label{
   font-size: 14px;
+  width: 100%;
 }
 
 .numero-cant{
@@ -100,7 +101,7 @@ div .button{
 
 #button-quitar{
   font-size: 10px;
-  margin-top: 77px;
+  margin-top: 67px;
 }
 
 #agregar{
