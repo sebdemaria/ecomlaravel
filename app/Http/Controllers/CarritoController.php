@@ -15,8 +15,12 @@ class CarritoController extends Controller
   public function listar(Request $datos) {
     if(Auth::check()){
       $carritos = Auth::user()->productos()->get();
-      $total = 0;
-      return view('carrito',compact('carritos', 'total'));
+      if(count($carritos) != 0){
+        $total = 0;
+        return view('carrito', compact('carritos', 'total'));
+      } else {
+        return view('carrito-vacio');
+      }
     } else {
       return redirect('/');
     }
