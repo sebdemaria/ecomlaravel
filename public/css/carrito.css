@@ -118,9 +118,14 @@ div .button{
   margin-bottom: 20px;
 }
 
+.suma{
+  float: right;
+  margin-right: 10px;
+}
+/*
 footer{
   position: absolute;
-}
+} */
 
 @media (min-width: 768px) {
   .descrip-prod{
