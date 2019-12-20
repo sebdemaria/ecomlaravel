@@ -67,7 +67,7 @@
 
       <!-- Fecha de nacimiento -->
       <div id="nac" class="datos">
-        <p>
+        <p class="fecha">
           Fecha de nacimiento
         </p>
         <p>
