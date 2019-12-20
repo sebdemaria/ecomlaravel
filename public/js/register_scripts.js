@@ -1,7 +1,6 @@
 window.onload = function() {
   //Expresiones regulares
   var regexNombre =  /^[a-zA-Z ]+$/;
-    //var regexNombre = /^([A-Za-zÁÉÍÓÚñáéíóúÑ]{3}?[A-Za-zÁÉÍÓÚñáéíóúÑ\']+[\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{3}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])+[\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{3}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])?$/;
   var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
   var regexPass = /^\w{8,10}$/;
   //Creo parrafos
@@ -125,4 +124,6 @@ window.onload = function() {
       }
     }
   }
+  var parrafos = document.querySelector('p');
+  parrafos.style.color = "red";
 }

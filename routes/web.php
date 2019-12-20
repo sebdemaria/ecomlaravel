@@ -20,6 +20,7 @@ Route::get('/contacto', function () {
 
 //Productos
 Route::get('/productos', 'ProductosController@listar');
+Route::post('/productos', 'ProductosController@buscar');
 
 //ProductosXmas
 Route::get('/xmas', 'XmasProductosController@listar');

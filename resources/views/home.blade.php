@@ -7,12 +7,6 @@
 @endsection
 
 <!-- MAIN -->
-<script>
-var resultado = null;
-  var mensaje = "Nuestro sitio utiliza cookies. ¿Estás de acuerdo con el uso de las mismas?";
-  var resultado = confirm(mensaje);
-
-</script>
 @section('main')
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -136,4 +130,5 @@ var resultado = null;
     </div>
   </div>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="/js/home_scripts.js"></script>
 @endsection

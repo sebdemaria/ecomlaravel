@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Producto;
@@ -12,8 +11,10 @@ class ProductosController extends Controller
     return view("productos", compact("productos"));
   }
 
-  public function buscar()
+  public function buscar(Request $datos)
   {
-    $productos = Producto::all();
+    $productos = Producto::paginate(8);
+    return view("productos", compact("productos"));
   }
 }
+?>

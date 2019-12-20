@@ -15,20 +15,10 @@
     <form class="formulario" method="POST" action="/upload" enctype="multipart/form-data">
       @csrf
 
-      <!-- Imagenes -->
-      <div id="av" class="datos">
-        <p class="parrafoAvatar">
-          <label for="avatar">Elige tu avatar</label>
-        </p>
-        <p>
-          <input class="avatar" type="file" id="avatar" name="avatar" value="">
-        </p>
-      </div>
-
       <!-- Nombre -->
       <div id="nombre" class="datos">
         <p>
-          <input id="nom" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Nombre del producto">
+          <input id="nom" type="text" name="nombre" value="{{old('nombre')}}" placeholder ="Nombre">
         </p>
       </div>
 
@@ -60,15 +50,26 @@
         </p>
       </div>
 
+      <!-- Imagenes -->
+      <div id="av" class="datos">
+        <p class="parrafoAvatar">
+          <label for="avatar">Ingresa una imagen del producto:</label>
+        </p>
+        <p>
+          <input class="avatar" type="file" id="avatar" name="avatar" value="">
+        </p>
+      </div>
+
       <!-- Descripcion -->
       <div id="descripcion" class="datos">
         <p>
-          <textarea id= "descrip" name="descripcion" rows="20" cols="100"> </textarea>
+          <label for="descripcion">Descripcion del producto: </label>
+          <textarea id= "descrip" name="descripcion" rows="5" cols="50"> </textarea>
         </p>
       </div>
 
       <!-- Subir producto -->
-      <div class="crearcuenta">
+      <div class="subirProducto">
         <p>
           <div class="button">
             <button id="button-cuenta" type="submit" class="btn btn-primary">
