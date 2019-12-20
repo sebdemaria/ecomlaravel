@@ -41,15 +41,15 @@
             </form>
           </div>
         </li>
+
+        <p class="total">
+          Subtotal: {{$producto->precio}}
+          <br>
+          <br>
+          Total: {{($producto->pivot->cantidad)*$producto->precio}}
+        </p>
       @endforeach
     </ul>
-
-    <p class="total">
-      Subtotal: {{($producto->pivot->cantidad)*$precio}}
-      <br>
-      <br>
-      Total: {{($producto->pivot->cantidad)*($precio)}}
-    </p>
 
     <a href="checkout">
     <button id="button-confirmar" type="button" class="btn btn-outline-primary">Confirmar compra</button>
