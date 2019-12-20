@@ -7,7 +7,7 @@ class Producto extends Model
   public $table = "productos";
   public $guarded = [];
 
-    public function productos() {
+    public function usuarios() {
         return $this->belongsToMany(Producto::class,'Carritos','idProducto','idUsuario');
     }
 }
