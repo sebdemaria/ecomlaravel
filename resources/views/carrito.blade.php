@@ -17,20 +17,13 @@
       @foreach ($carritos as $producto)
         <li>
           <div class="imagen">
-            <img src="img/samsung-a50.png" alt="samsung a50">
+            <img src="/img/iphone-11.png" alt="iphone 11">
           </div>
 
           <div class="descrip-prod">
             <h3><strong>{{$producto->nombre}}</strong></h3>
-            <form action="/borrarProducto" method="post">
-            @csrf
-              <input type="hidden" name="idProducto" value="{{$producto->id}}">
-                <div class="button">
-                  <button id="button-quitar" type="submit" class="btn btn-primary">Quitar</button>
-                </div>
-            </form>
 
-            <form action="/modificarCantidad" method="post">
+            <form class="cantidad" action="/modificarCantidad" method="post">
             @csrf
               <input type="hidden" name="idProducto" value="{{$producto->id}}">
               <label for="cantidad">Cantidad</label>
@@ -38,6 +31,13 @@
               <div class="button">
                 <button id="agregar" type="submit" class="btn btn-success">Actualizar Cantidad</button>
               </div>
+            </form>
+            <form class="borrar" action="/borrarProducto" method="post">
+            @csrf
+              <input type="hidden" name="idProducto" value="{{$producto->id}}">
+                <div class="button">
+                  <button id="button-quitar" type="submit" class="btn btn-primary">Quitar</button>
+                </div>
             </form>
           </div>
         </li>
