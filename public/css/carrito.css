@@ -48,7 +48,7 @@ label{
   font-size: 14px;
 }
 
-.form-control{
+.numero-cant{
   width: 25%;
   text-align: center;
   margin-bottom: 10px;
@@ -162,7 +162,7 @@ div .button{
     justify-content: center;
   }
 
-  .form-control{
+  .numero-cant{
     width: 50%;
   }
 
