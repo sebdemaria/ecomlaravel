@@ -118,6 +118,10 @@ div .button{
   margin-bottom: 20px;
 }
 
+footer{
+  position: absolute;
+}
+
 @media (min-width: 768px) {
   .descrip-prod{
     display: inline-flex;
@@ -153,6 +157,7 @@ div .button{
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
   }
 
   div .lista-prod {
@@ -174,5 +179,4 @@ div .button{
   #button-confirmar{
     width: 100%;
   }
-
 }
