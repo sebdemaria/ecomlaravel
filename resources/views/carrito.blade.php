@@ -23,15 +23,18 @@
           <div class="descrip-prod">
             <h3><strong>{{$producto->nombre}}</strong></h3>
 
+            <!-- Modificar cantidad -->
             <form class="cantidad" action="/modificarCantidad" method="post">
             @csrf
               <input type="hidden" name="idProducto" value="{{$producto->id}}">
               <label for="cantidad">Cantidad</label>
-              <input class="numero-cant" type="text" name="cantidad" value="{{$producto->pivot->cantidad}}" class="form-control">
+              <input id="cantidad" class="numero-cant" type="text" name="cantidad" value="{{$producto->pivot->cantidad}}" class="form-control">
               <div class="button">
                 <button id="agregar" type="submit" class="btn btn-success">Actualizar Cantidad</button>
               </div>
             </form>
+
+            <!-- Quitar producto -->
             <form class="borrar" action="/borrarProducto" method="post">
             @csrf
               <input type="hidden" name="idProducto" value="{{$producto->id}}">
@@ -61,4 +64,5 @@
     </a>
   </div>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="/js/carrito_scripts.js"></script>
 @endsection
