@@ -13,7 +13,8 @@
   </h1>
 
   <div class="caja-principal">
-      <p>¡Agrega un producto!<p>
+      <p>Tu carrito se encuentra vacio...
+        <br>¡Navegá por biser y encontrá lo que necesites!<p>
       <img src="/img/carrito.jpg" alt="">
     <p>
       <a href="productos">
