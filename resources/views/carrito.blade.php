@@ -27,7 +27,7 @@
             @csrf
               <input type="hidden" name="idProducto" value="{{$producto->id}}">
               <label for="cantidad">Cantidad</label>
-              <input type="text" name="cantidad" value="{{$producto->pivot->cantidad}}" class="form-control">
+              <input class="numero-cant" type="text" name="cantidad" value="{{$producto->pivot->cantidad}}" class="form-control">
               <div class="button">
                 <button id="agregar" type="submit" class="btn btn-success">Actualizar Cantidad</button>
               </div>

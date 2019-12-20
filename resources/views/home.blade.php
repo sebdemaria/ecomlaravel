@@ -92,10 +92,10 @@ var resultado = null;
     <ul>
       <li>
         <div class="imagen">
-          <img src="/img/samsung-a50.png" alt="samsung a50">
+          <img src="/img/iphone-11.png" alt="iphone 11">
         </div>
         <div class="descrip-prod">
-          <h3><strong>Samsung A50 64GB 2019</strong></h3>
+          <h3><strong>Apple Iphone 11 128gb</strong></h3>
           <p>
             3 cuotas sin interés de $3.499,99
           </p>
