@@ -61,6 +61,13 @@
         <form class="" action="{{url('detalle-prod')}}/{{$producto->id}}" method="get">
           <button id="button-agregar" type="submit" class="button btn btn-outline-primary">Ver más</button>
         </form>
+        @if(Auth::check() && Auth::user()->isAdmin)
+        <form action="/borrarProducto" method="post">
+          @csrf
+          <input type="hidden" name='idProducto' value="{{ $producto->id }}">
+          <button type="submit" class="button btn btn-danger">Borrar</button>
+        </form>
+        @endif
       </div>
     @endforeach
   </div>

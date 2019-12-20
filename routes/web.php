@@ -48,6 +48,8 @@ Route::get('/noAuth', function () {
 Route::get('/upload', 'UploadController@vista');
 Route::post('/upload', 'UploadController@agregarProducto');
 
+//Borrar producto
+Route::post('/borrarProducto', 'ProductosController@borrarProducto');
 //Login / Register
 Auth::routes();
 //Logout
