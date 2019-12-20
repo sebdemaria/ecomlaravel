@@ -2,6 +2,10 @@
   top: 0;
 }
 
+main{
+  width: 100%;
+}
+
 .container-fluid{
   padding: 0;
   margin: 0;
@@ -45,8 +49,16 @@ footer{
     align-items: center;
   }
 
-@media (min-width: 1024px) {
+  img{
+    width: 10%;
+    text-align: center;
+  }
 
+  #button{
+    width: 40%;
+  }
+
+@media (min-width: 1024px) {
   main{
     display: inline-flex;
     flex-wrap: wrap;
@@ -54,7 +66,8 @@ footer{
     width: 100%;
   }
 
-  #button {
-    width: 100%;
+  img{
+    width: 20%;
+    text-align: center;
   }
 }
