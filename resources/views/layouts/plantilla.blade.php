@@ -33,7 +33,7 @@
 
       <!-- Buscador -->
       <nav class="navbar">
-        <form class="form-inline">
+        <form action="/productos" method="post" class="form-inline">
           <input id="cuadro-info" class="form-control mr-sm-2" type="search" placeholder="¿Qué buscás?" aria-label="Search">
           <button class="btn" type="submit"><ion-icon class="lupa" name="search"></ion-icon></button>
         </form>

@@ -43,12 +43,17 @@
         </li>
 
         <p class="total">
-          Subtotal: {{$producto->precio}}
-          <br>
-          <br>
-          Total: {{($producto->pivot->cantidad)*$producto->precio}}
+          Precio: {{$producto->precio}} | Subtotal: {{($producto->pivot->cantidad)*$producto->precio}}
         </p>
+
+        @php
+        $total = $total + ($producto->pivot->cantidad)*$producto->precio
+        @endphp
+
       @endforeach
+      <p>
+        Total: {{$total}}
+      </p>
     </ul>
 
     <a href="checkout">

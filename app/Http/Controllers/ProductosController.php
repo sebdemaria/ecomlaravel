@@ -11,4 +11,9 @@ class ProductosController extends Controller
     $productos = Producto::paginate(12);
     return view("productos", compact("productos"));
   }
+
+  public function buscar()
+  {
+    $productos = Producto::all();
+  }
 }
