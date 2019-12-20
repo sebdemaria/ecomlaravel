@@ -15,20 +15,10 @@ class CarritoController extends Controller
   public function listar(Request $datos) {
     if(Auth::check()){
       $carritos = Auth::user()->productos()->get();
-      //return view('carrito',compact('carritos'));
+      return view('carrito',compact('carritos'));
     } else {
       return redirect('/');
     }
-
-    //Traigo productos
-    $productos = Producto::all();
-    $precio = 0;
-    foreach ($productos as $producto) {
-      if ($producto->id == $datos->idProducto) {
-        $precio = $producto->precio;
-      }
-    }
-    return view('/carrito', compact('carritos', 'precio'));
   }
 
   public function agregar(Request $datos) {
