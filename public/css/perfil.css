@@ -121,6 +121,9 @@ select{
   .fotoPerfil{
     width: 20%;
   }
+
+  footer{
+    position: absolute;
 }
 
 @media (min-width: 1024px){
@@ -164,5 +167,8 @@ select{
 
   select{
     width: 40%;
+  }
+
+
   }
 }
